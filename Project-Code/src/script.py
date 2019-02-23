@@ -26,48 +26,18 @@ def parse_result(msa_xml_file):
 			library.write_to_file(OUTPUT_DIR+"msa.fasta", textwrap.fill(hsp.query, 60), "a")
 		library.write_to_file(OUTPUT_DIR+"msa.fasta", "", "a")
 
-for filename in os.listdir(TARGET_DIR):
-    if filename.endswith(".fasta") : 
-    	 target_file = TARGET_DIR+filename
-    	 msa_file = OUTPUT_DIR+"msa.xml";
-    	 record = SeqIO.read(target_file, format="fasta")
-    	 result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
-    	 library.create_dir(OUTPUT_DIR)
-    	 library.write_stream(msa_file, result_handle)
-    	 parse_result(msa_file)
-    else:
-        continue
+def main():
+	for filename in os.listdir(TARGET_DIR):
+	    if filename.endswith(".fasta") : 
+	    	 target_file = TARGET_DIR+filename
+	    	 msa_file = OUTPUT_DIR+"msa.xml";
+	    	 record = SeqIO.read(target_file, format="fasta")
+	    	 result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
+	    	 library.create_dir(OUTPUT_DIR)
+	    	 library.write_stream(msa_file, result_handle)
+	    	 parse_result(msa_file)
+	    else:
+	        continue
 
 
-
-
-# # result=open("output.xml","r")
-# # records= NCBIXML.parse(result)
-# # item=next(records)
-# # for alignment in item.alignments:
-# # 	for hsp in alignment.hsps:
-# # 		print(hsp.match)
-#         # print(hsp.sbjct)
-# with open("output.xml", "w+") as save_to:
-#     save_to.write(result_handle.read())
-#     result_handle.close()
-
-
-# result=open("output.xml","r")
-# records= NCBIXML.parse(result)
-# item=next(records)
-# for alignment in item.alignments:
-# 	print(alignment.accession[0:4])
-# 	# for hsp in alignment.hsps:
-# 		# print(hsp)
-# 		# print(hsp.match)
-  #       print(hsp.sbjct)
-
-print("done")
-# https://www.biostars.org/p/98693/
-# env_nr
-# nr
-# pataa
-# pdbaa
-# refseq_protein
-# swissprot
+main()
