@@ -1,20 +1,18 @@
 import os
+from os.path import dirname, abspath
 import sys
 import textwrap
-sys.path.append('../')
+DIRECTORY = dirname(dirname(abspath(__file__)))
+sys.path.append(DIRECTORY)
 from lib import library 
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 from Bio import SeqIO
 
 
-TARGET_DIR = "../data/target/"
+TARGET_DIR = "../data/target/" #place target fasta files here i.e. one fasta file per target protein
 OUTPUT_DIR = "../data/msa/"
 
-def write_output(filename,handle, data_stream):
-	with open(filename, "w+") as handle:
-	    handle.write(data_stream)
-	    data_stream.close()
 
 def parse_result(msa_xml_file):
 	result=open(msa_xml_file,"r")
