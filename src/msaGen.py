@@ -8,6 +8,9 @@ blastDir = "../data/blast/"
 outputDir = "../data/msa/"
 
 def blastTarget():
+	"""
+	This reads a fasta file containing a protein sequence ../data/target/ and queries NCBI to retrieve similar proteins. The output is written to ../data/blast/.
+	"""
 	for file in os.listdir(inputDir):
 		if file.endswith("fasta"):
 			sequence = SeqIO.read(inputDir+file, format = "fasta")
@@ -18,7 +21,13 @@ def blastTarget():
 				outHandle.write(resultHandle.read())
 			resultHandle.close()
 
-def parseMsa(eValueThreshold = 3.04):
+def parseMsa(eValueThreshold = 3.04, print_match=False, print_subject=False):
+	"""
+	This parses the blast .xml files from *../data/blast/* and generates a fasta file in ../data/msa/. 
+	eValueThreshold: This sets the maximum eValue allowed for sequences returned.
+	print_match: This writes match data to the fasta file.
+	print_subject: This writes the input sequence to the fast file.
+	"""
 	for file in os.listdir(blastDir):
 		if file.endswith("xml"):
 			blast = open(blastDir + file)
@@ -40,8 +49,10 @@ def parseMsa(eValueThreshold = 3.04):
 							#fastaHandle.write("e value: " + str(hsp.expect)+ "\n")
 							#Write the input input, match and the output
 							fastaHandle.write(hsp.query+ "\n")
-							fastaHandle.write(hsp.match+ "\n")
-							fastaHandle.write(hsp.sbjct+ "\n")
+							if(print_match==True):
+								fastaHandle.write(hsp.match+ "\n")
+							if(print_subject==True):
+								fastaHandle.write(hsp.sbjct+ "\n")
 							#fastaHandle.write("\n")
 			fastaHandle.close()
 			
