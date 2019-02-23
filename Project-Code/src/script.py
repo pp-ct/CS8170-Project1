@@ -16,13 +16,14 @@ OUTPUT_DIR = "../data/msa/"
 
 def parse_result(msa_xml_file):
 	result=open(msa_xml_file,"r")
+	output+= OUTPUT_DIR+"msa.fasta";
 	records= NCBIXML.parse(result)
 	item=next(records)
 	for alignment in item.alignments:
 		for hsp in alignment.hsps:
-			library.write_to_file(OUTPUT_DIR+"msa.fasta", ">"+alignment.accession[0:4]+":"+alignment.accession[5]+"|PDBID|CHAIN|SEQUENCE","a")
-			library.write_to_file(OUTPUT_DIR+"msa.fasta", textwrap.fill(hsp.query, 60), "a")
-		library.write_to_file(OUTPUT_DIR+"msa.fasta", "", "a")
+			library.write_to_file(output, ">"+alignment.accession[0:4]+":"+alignment.accession[5]+"|PDBID|CHAIN|SEQUENCE","a")
+			library.write_to_file(output, textwrap.fill(hsp.query, 60), "a")
+		library.write_to_file(output+"msa.fasta", "", "a")
 
 def main():
 	for filename in os.listdir(TARGET_DIR):
