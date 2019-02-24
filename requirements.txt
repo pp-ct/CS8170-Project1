@@ -1,16 +1,4 @@
-required libraries
-
-run the following commands
-
-- pip install numpy
-- pip install scipy
-- pip install biopython
-- pip install matplotlib
-
-Instrictions
-
-Place the target protein sequence fasta file in the ../data/target/ directory
-then go to the src directory to execute the following command:
-- python script.py
-
-the multiple sequence alignment fasta file would be generated and placed in the ../data/msa/  directory
+numpy
+scipy
+biopython
+matplotlib
