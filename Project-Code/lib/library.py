@@ -1,6 +1,7 @@
 import os
 from Bio import PDB
 import numpy as np
+import urllib
 
 def write_to_file(file_name, data, mode):
 	with open(file_name, mode) as file:  
@@ -33,3 +34,10 @@ def load_ca_distnaces_from_pdb(path, length, chain_id=None):
                     continue
 
     return distance_matrix
+
+def download_pdb(id, save_folder):
+    if not os.path.isfile(os.path.join(save_folder, id + '.pdb')):
+        try:
+            urllib.request.urlretrieve("http://files.rcsb.org/view/" + id.lower() + ".pdb", os.path.join(save_folder, id + '.pdb'))
+        except:
+            print('PDB {} not found.'.format(id))
