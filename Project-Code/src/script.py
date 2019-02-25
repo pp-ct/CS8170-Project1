@@ -37,7 +37,7 @@ def main():
 	    	 library.create_dir(OUTPUT_DIR)
 	    	 library.write_stream(msa_file, result_handle)
 	    	 parse_result(msa_file, file_no)
-	    	else:
+		else:
 	        	continue
 
 main()
