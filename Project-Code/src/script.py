@@ -24,6 +24,7 @@ def parse_result(msa_xml_file,file_no):
 			library.write_to_file(output, ">"+alignment.accession[0:4]+":"+alignment.accession[5]+"|PDBID|CHAIN|SEQUENCE","a")
 			library.write_to_file(output, textwrap.fill(hsp.query, 60), "a")
 		library.write_to_file(output, "", "a")
+	print(str(file_no)+"msa fasta file has been generated")
 
 def main():
 	for filename in os.listdir(TARGET_DIR):
@@ -37,7 +38,7 @@ def main():
 	    	 library.create_dir(OUTPUT_DIR)
 	    	 library.write_stream(msa_file, result_handle)
 	    	 parse_result(msa_file, file_no)
-	    	else:
+		else:
 	        	continue
 
 main()
