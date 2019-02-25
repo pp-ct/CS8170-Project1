@@ -22,7 +22,9 @@ def parse_result(msa_xml_file,file_no):
 	for alignment in item.alignments:
 		for hsp in alignment.hsps:
 			library.write_to_file(output, ">"+alignment.accession[0:4]+":"+alignment.accession[5]+"|PDBID|CHAIN|SEQUENCE","a")
-			library.write_to_file(output, textwrap.fill(hsp.query, 60), "a")
+			library.write_to_file(output, hsp.query, "a")
+			library.write_to_file(output, hsp.match,"a")
+			library.write_to_file(output, hsp.sbjct, "a")
 		library.write_to_file(output, "", "a")
 	print(str(file_no)+" msa fasta file has been generated")
 
