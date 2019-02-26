@@ -41,3 +41,6 @@ def download_pdb(id, save_folder):
             urllib.request.urlretrieve("http://files.rcsb.org/view/" + id.lower() + ".pdb", os.path.join(save_folder, id + '.pdb'))
         except:
             print('PDB {} not found.'.format(id))
+            return False
+
+    return True

@@ -1,8 +1,9 @@
 
 class Alignment:
   
-  def __init__(self,hit_id, query_range, hit_range, query_seq, hit_seq, midline):
+  def __init__(self,hit_id, chain_id, query_range, hit_range, query_seq, hit_seq, midline):
     self.hit_id = hit_id
+    self.chain_id = chain_id
     self.query_range = query_range 
     self.hit_range = hit_range
 
