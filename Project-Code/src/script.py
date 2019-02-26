@@ -85,9 +85,6 @@ def download_pdbs_for_alignments(alignment_list):
 	for alignment in alignment_list:
 		if not library.download_pdb(TEMPLATE_PDB_DIR, alignment.hit_id, alignment.chain_id):
 			bad_alignments.append(alignment)
-		else:
-			alignment.pdb_path = os.path.join(TEMPLATE_PDB_DIR,
-											  "{}_{}.pdb".format(alignment.hit_id, alignment.chain_id))
 
 	for alignment in bad_alignments:
 		alignment_list.remove(alignment)
@@ -101,16 +98,13 @@ def download_pdbs_for_alignments(alignment_list):
 	print("Reindexing PDBs\n")
 	for alignment in alignment_list:
 		hit_chain_id = "{}_{}".format(alignment.hit_id, alignment.chain_id)
-		print("python ../lib/zhang_python_scripts/reindex_pdb.py {} {} {} -clean=True".format(
-			os.path.join(TEMPLATE_FASTA_DIR, hit_chain_id + ".fasta"),
-			os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb"),
-			os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb")
-		))
-		os.system("python ../lib/zhang_python_scripts/reindex_pdb.py {} {} {} -clean=True".format(
-			os.path.join(TEMPLATE_FASTA_DIR, hit_chain_id + ".fasta"),
-			os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb"),
-			os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb")
-		))
+		if not os.path.exists(os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".reindex.pdb")):
+			os.system("python ../lib/zhang_python_scripts/reindex_pdb.py {} {} {} -clean=True".format(
+				os.path.join(TEMPLATE_FASTA_DIR, hit_chain_id + ".fasta"),
+				os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb"),
+				os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".reindex.pdb")
+			))
+		alignment.pdb_path = os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".reindex.pdb")
 
 
 def build_target_distance_pdfs(length, alignment_list):
@@ -146,13 +140,13 @@ def main():
 			target_file = TARGET_DIR + filename
 			msa_file = OUTPUT_DIR + "msa.xml"
 			record = SeqIO.read(target_file, format="fasta")
-			# result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
-			# library.create_dir(OUTPUT_DIR)
-			# library.write_stream(msa_file, result_handle)
+			result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
+			library.create_dir(OUTPUT_DIR)
+			library.write_stream(msa_file, result_handle)
 
 			alignment_list = gen_alignment_list(msa_file)
 			download_pdbs_for_alignments(alignment_list)
-			# target_distance_pdfs = build_target_distance_pdfs(len(record.seq), alignment_list)
+			target_distance_pdfs = build_target_distance_pdfs(len(record.seq), alignment_list)
 		else:
 			continue
 
