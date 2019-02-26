@@ -54,7 +54,7 @@ def download_pdb(save_folder, hit_id, chain_id):
 
 
 def get_fasta_for_id(save_folder, hit_id, chain_id):
-    file_name = "{}_{}.pdb".format(hit_id, chain_id)
+    file_name = "{}_{}.fasta".format(hit_id, chain_id)
     if not os.path.isfile(os.path.join(save_folder, file_name)):
         url = "http://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId={}&chainId={}"\
             .format(hit_id, chain_id)
