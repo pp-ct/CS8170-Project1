@@ -2,6 +2,7 @@ import os
 from Bio import PDB
 import numpy as np
 import urllib
+import matplotlib.pyplot as plt
 
 
 def write_to_file(file_name, data, mode):
@@ -61,3 +62,10 @@ def get_fasta_for_id(save_folder, hit_id, chain_id):
 
         dest = os.path.join(save_folder, file_name)
         urllib.request.urlretrieve(url, dest)
+
+
+def output_distance_matrix(save_folder, distance_matrix, prefix=None):
+    map = plt.imshow(distance_matrix, cmap='gray')
+    plt.colorbar(map)
+    plt.savefig(os.path.join(save_folder, "{}distance_matrix.png".format((prefix + "_") if prefix else "")))
+    plt.close()
