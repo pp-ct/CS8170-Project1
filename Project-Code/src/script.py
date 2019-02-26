@@ -1,8 +1,10 @@
 import os
 from os.path import dirname, abspath
 import sys
+import glob
 import re
 import textwrap
+import numpy as np
 
 DIRECTORY = dirname(dirname(abspath(__file__)))
 sys.path.append(DIRECTORY)
@@ -14,10 +16,14 @@ from Alignment import Alignment
 
 TARGET_DIR = "../data/target/"  # place target fasta files here i.e. one fasta file per target protein
 OUTPUT_DIR = "../data/msa/"
-TEMPLATE_DIR = "../data/template_pdbs"
+TEMPLATE_PDB_DIR = "../data/template_pdbs"
+TEMPLATE_FASTA_DIR = "../data/template_fasta"
 
 
 def parse_result(msa_xml_file, file_no):
+	print('*' * 50)
+	print("Parsing Alignment XML\n\n")
+
 	result = open(msa_xml_file, "r")
 	output = OUTPUT_DIR + "msa" + str(file_no) + ".fasta"
 	records = NCBIXML.parse(result)
@@ -34,6 +40,9 @@ def parse_result(msa_xml_file, file_no):
 
 
 def gen_alignment_list(msa_xml_file):
+	print('*' * 50)
+	print("Generating Alignment List\n\n")
+
 	result = open(msa_xml_file, "r")
 	records = NCBIXML.parse(result)
 	alignment_obj_list = []
@@ -60,20 +69,72 @@ def gen_alignment_list(msa_xml_file):
 
 
 def download_pdbs_for_alignments(alignment_list):
-	if not os.path.exists(TEMPLATE_DIR):
-		os.mkdir(TEMPLATE_DIR)
+	print('*' * 50)
+	print("Downloading PDBs for Alignments\n\n")
+	if not os.path.exists(TEMPLATE_PDB_DIR):
+		os.mkdir(TEMPLATE_PDB_DIR)
+	if not os.path.exists(TEMPLATE_FASTA_DIR):
+		os.mkdir(TEMPLATE_FASTA_DIR)
 
 	# some alignments will not actually have PDBs, so we need to discard them
 	# (this can also happen if request times out)
 	bad_alignments = []
 
 	# download PDBs, and keep track of bad alignments
+	print("Getting PDBs from database\n")
 	for alignment in alignment_list:
-		if not library.download_pdb(alignment.hit_id, TEMPLATE_DIR):
+		if not library.download_pdb(TEMPLATE_PDB_DIR, alignment.hit_id, alignment.chain_id):
 			bad_alignments.append(alignment)
+		else:
+			alignment.pdb_path = os.path.join(TEMPLATE_PDB_DIR,
+											  "{}_{}.pdb".format(alignment.hit_id, alignment.chain_id))
 
 	for alignment in bad_alignments:
 		alignment_list.remove(alignment)
+
+	# need full fasta for renumbering PDBs
+	print("Getting FASTAs from database\n")
+	for alignment in alignment_list:
+		library.get_fasta_for_id(TEMPLATE_FASTA_DIR, alignment.hit_id, alignment.chain_id)
+
+	# now reindex PDBs
+	print("Reindexing PDBs\n")
+	for alignment in alignment_list:
+		hit_chain_id = "{}_{}".format(alignment.hit_id, alignment.chain_id)
+		print("python ../lib/zhang_python_scripts/reindex_pdb.py {} {} {} -clean=True".format(
+			os.path.join(TEMPLATE_FASTA_DIR, hit_chain_id + ".fasta"),
+			os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb"),
+			os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb")
+		))
+		os.system("python ../lib/zhang_python_scripts/reindex_pdb.py {} {} {} -clean=True".format(
+			os.path.join(TEMPLATE_FASTA_DIR, hit_chain_id + ".fasta"),
+			os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb"),
+			os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".pdb")
+		))
+
+
+def build_target_distance_pdfs(length, alignment_list):
+	print('*' * 50)
+	print("Building Target Distance PDF Matrix\n\n")
+
+	# this LxLx2 array will contain mean and SD for each pair of residues
+	target_distance_pdfs = [[(0, 0)] * length] * length
+
+	# this is the LxL matrix of lists (sort of)
+	# each list contains all of the distances for the aligned pair
+	for i in range(length):
+		for j in range(length):
+			ij_distance_list = []
+			for alignment in alignment_list:
+				alignment_ij_distance = alignment.get_distance_for_query_residues(i, j)
+				if alignment_ij_distance:
+					ij_distance_list.append(alignment_ij_distance)
+
+			target_distance_pdfs[i][j] = (np.mean(ij_distance_list), np.std(ij_distance_list))
+			# print if you want to see it
+			# print(i, j, target_distance_pdfs[i][j])
+
+	return target_distance_pdfs
 
 
 def main():
@@ -85,12 +146,13 @@ def main():
 			target_file = TARGET_DIR + filename
 			msa_file = OUTPUT_DIR + "msa.xml"
 			record = SeqIO.read(target_file, format="fasta")
-			result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
-			library.create_dir(OUTPUT_DIR)
-			library.write_stream(msa_file, result_handle)
+			# result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
+			# library.create_dir(OUTPUT_DIR)
+			# library.write_stream(msa_file, result_handle)
 
 			alignment_list = gen_alignment_list(msa_file)
 			download_pdbs_for_alignments(alignment_list)
+			# target_distance_pdfs = build_target_distance_pdfs(len(record.seq), alignment_list)
 		else:
 			continue
 

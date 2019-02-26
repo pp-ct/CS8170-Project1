@@ -3,18 +3,22 @@ from Bio import PDB
 import numpy as np
 import urllib
 
-def write_to_file(file_name, data, mode):
-	with open(file_name, mode) as file:  
-		file.write(data+"\n") 
 
-def write_stream(filename,data_stream):
-	with open(filename, "w+") as handle:
-	    handle.write(data_stream.read())
-	    data_stream.close()
+def write_to_file(file_name, data, mode):
+    with open(file_name, mode) as file:
+        file.write(data + "\n")
+
+
+def write_stream(filename, data_stream):
+    with open(filename, "w+") as handle:
+        handle.write(data_stream.read())
+        data_stream.close()
+
 
 def create_dir(directory):
-	if not os.path.exists(directory):
-		os.makedirs(directory)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
 
 def load_ca_distnaces_from_pdb(path, length, chain_id=None):
     parser = PDB.PDBParser()
@@ -35,12 +39,25 @@ def load_ca_distnaces_from_pdb(path, length, chain_id=None):
 
     return distance_matrix
 
-def download_pdb(id, save_folder):
-    if not os.path.isfile(os.path.join(save_folder, id + '.pdb')):
+
+def download_pdb(save_folder, hit_id, chain_id):
+    file_name = "{}_{}.pdb".format(hit_id, chain_id)
+    if not os.path.isfile(os.path.join(save_folder, file_name)):
         try:
-            urllib.request.urlretrieve("http://files.rcsb.org/view/" + id.lower() + ".pdb", os.path.join(save_folder, id + '.pdb'))
+            urllib.request.urlretrieve("http://files.rcsb.org/view/" + hit_id.lower() + ".pdb",
+                                       os.path.join(save_folder, file_name))
         except:
-            print('PDB {} not found.'.format(id))
+            print("PDB {} not found.".format(hit_id))
             return False
 
     return True
+
+
+def get_fasta_for_id(save_folder, hit_id, chain_id):
+    file_name = "{}_{}.pdb".format(hit_id, chain_id)
+    if not os.path.isfile(os.path.join(save_folder, file_name)):
+        url = "http://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId={}&chainId={}"\
+            .format(hit_id, chain_id)
+
+        dest = os.path.join(save_folder, file_name)
+        urllib.request.urlretrieve(url, dest)
