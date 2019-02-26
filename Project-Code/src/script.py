@@ -55,8 +55,16 @@ def main():
 	    	 result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
 	    	 library.create_dir(OUTPUT_DIR)
 	    	 library.write_stream(msa_file, result_handle)
-	    	 parse_result(msa_file, file_no)
+	    	 #parse_result(msa_file, file_no)
+	    	 gen_alignment_obj(msa_file)
 		else:
 	        	continue
 
 main()
+
+# @Jeff code to loop through the object list
+# for i in range(len(align_obj)):
+# 	print(align_obj[i].hit_id)
+# 	print(align_obj[i].query_range) 
+# 	print(align_obj[i].hit_range)
+# 	print(align_obj[i].query_hit_dict)
