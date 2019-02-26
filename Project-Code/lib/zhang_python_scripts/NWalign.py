@@ -71,9 +71,9 @@ def print_matrix(matrix=[[]],f1='',f2=''):
     '''Print matrix in user friendly format. For debugging'''
     f1='^'+f1 if f1 else '^'+' '*len(matrix)
     f2=' ^'+f2
-    print '\t'.join(list(f2))
+    print( '\t'.join(list(f2)))
     for i,row in enumerate(matrix):
-        print '\t'.join([f1[i]]+[str(e) for e in row])
+        print( '\t'.join([f1[i]]+[str(e) for e in row]))
 
 def aa2int(f1="GKDGL"):
     ''' Convert AA sequence to interger according to the following mapping
@@ -96,13 +96,13 @@ def print_alignment(sequenceA='',sequenceB=''):
     len2=len(sequenceB.replace('-',''))
     L_id=sequenceM.count(':')
     identity=1.*L_id/len2 # Sequence identity
-    print "Aligned length:    %u"%(L_ali)
-    print "Identical length:    %u"%(L_id)
-    print "Sequence identity:    %.3f (=   %u/   %u)\n"%(identity,L_id,len2)
-    print sequenceA
-    print sequenceM
-    print sequenceB
-    print ''.join([str(i%10) for i in range(1,len(sequenceA)+1)])+'\n' #resi
+    print( "Aligned length:    %u"%(L_ali))
+    print( "Identical length:    %u"%(L_id))
+    print( "Sequence identity:    %.3f (=   %u/   %u)\n"%(identity,L_id,len2))
+    print( sequenceA)
+    print (sequenceM)
+    print (sequenceB)
+    print (''.join([str(i%10) for i in range(1,len(sequenceA)+1)])+'\n') #resi
 
 def initialize_matrix(len1=0,len2=0,alternative=True):
     '''initialize Dynamic Programming matrices
@@ -291,7 +291,7 @@ if __name__=="__main__":
         sys.stderr.write("ERROR! Unsupported file type "+input_mode+docstring)
         exit()
     
-    print "\nLength of sequence 1:\t"+str(len(f1))+" ->"+sys.argv[1]
-    print   "Length of sequence 2:\t"+str(len(f2))+" ->"+sys.argv[2]
+    print("\nLength of sequence 1:\t"+str(len(f1))+" ->"+sys.argv[1])
+    print("Length of sequence 2:\t"+str(len(f2))+" ->"+sys.argv[2])
 
     NeedlemanWunsch(f1,f2)

@@ -1,5 +1,5 @@
-numpy
-scipy
-biopython
-matplotlib
-tqdm
+pip install numpy
+pip install scipy
+pip install biopython
+pip install matplotlib
+pip install tqdm
