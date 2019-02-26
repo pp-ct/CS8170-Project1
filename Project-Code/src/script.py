@@ -13,6 +13,7 @@ from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 from Bio import SeqIO
 from Alignment import Alignment
+from tqdm import tqdm
 
 DATA_DIR = "../data"
 TARGET_DIR = "../data/target/"  # place target fasta files here i.e. one fasta file per target protein
@@ -22,7 +23,7 @@ TEMPLATE_FASTA_DIR = "../data/template_fasta"
 
 
 def parse_result(msa_xml_file, file_no):
-    print('*' * 50)
+    print("\n" + '*' * 50)
     print("Parsing Alignment XML\n\n")
 
     result = open(msa_xml_file, "r")
@@ -41,14 +42,14 @@ def parse_result(msa_xml_file, file_no):
 
 
 def gen_alignment_list(msa_xml_file):
-    print('*' * 50)
+    print("\n" + '*' * 50)
     print("Generating Alignment List\n\n")
 
     result = open(msa_xml_file, "r")
     records = NCBIXML.parse(result)
     alignment_obj_list = []
     item = next(records)
-    for alignment in item.alignments:
+    for alignment in tqdm(item.alignments, desc="Parsing MSA XML"):
         for hsp in alignment.hsps:
             hit_id = alignment.accession[0:4]
             chain_id = alignment.accession[5]
@@ -70,8 +71,8 @@ def gen_alignment_list(msa_xml_file):
 
 
 def download_pdbs_for_alignments(alignment_list):
-    print('*' * 50)
-    print("Downloading PDBs for Alignments\n\n")
+    print("\n" + '*' * 50)
+    print("Downloading PDBs for Alignments\n")
     if not os.path.exists(TEMPLATE_PDB_DIR):
         os.mkdir(TEMPLATE_PDB_DIR)
     if not os.path.exists(TEMPLATE_FASTA_DIR):
@@ -82,8 +83,8 @@ def download_pdbs_for_alignments(alignment_list):
     bad_alignments = []
 
     # download PDBs, and keep track of bad alignments
-    print("Getting PDBs from database\n")
-    for alignment in alignment_list:
+    # print("\nGetting PDBs from database")
+    for alignment in tqdm(alignment_list, desc="Getting PDBs from database"):
         if not library.download_pdb(TEMPLATE_PDB_DIR, alignment.hit_id, alignment.chain_id):
             bad_alignments.append(alignment)
 
@@ -91,13 +92,13 @@ def download_pdbs_for_alignments(alignment_list):
         alignment_list.remove(alignment)
 
     # need full fasta for renumbering PDBs
-    print("Getting FASTAs from database\n")
-    for alignment in alignment_list:
+    # print("\nGetting FASTAs from database")
+    for alignment in tqdm(alignment_list, desc="Getting FASTAs from database"):
         library.get_fasta_for_id(TEMPLATE_FASTA_DIR, alignment.hit_id, alignment.chain_id)
 
     # now reindex PDBs
-    print("Reindexing PDBs\n")
-    for alignment in alignment_list:
+    # print("\nReindexing PDBs")
+    for alignment in tqdm(alignment_list, desc="Reindexing PDBs"):
         hit_chain_id = "{}_{}".format(alignment.hit_id, alignment.chain_id)
         if not os.path.exists(os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".reindex.pdb")):
             os.system("python ../lib/zhang_python_scripts/reindex_pdb.py {} {} {} -clean=True".format(
@@ -146,9 +147,9 @@ def main():
             target_file = TARGET_DIR + filename
             msa_file = OUTPUT_DIR + "msa.xml"
             record = SeqIO.read(target_file, format="fasta")
-            # result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
-            # library.create_dir(OUTPUT_DIR)
-            # library.write_stream(msa_file, result_handle)
+            result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
+            library.create_dir(OUTPUT_DIR)
+            library.write_stream(msa_file, result_handle)
 
             alignment_list = gen_alignment_list(msa_file)
             download_pdbs_for_alignments(alignment_list)
