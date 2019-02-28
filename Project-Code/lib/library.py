@@ -5,6 +5,50 @@ import urllib
 import matplotlib.pyplot as plt
 
 
+aa_dict = {
+    'A':'ALA',
+    'C':'CYS',
+    'D':'ASP',
+    'E':'GLU',
+    'F':'PHE',
+    'G':'GLY',
+    'H':'HIS',
+    'I':'ILE',
+    'K':'LYS',
+    'L':'LEU',
+    'M':'MET',
+    'N':'ASN',
+    'P':'PRO',
+    'Q':'GLN',
+    'R':'ARG',
+    'S':'SER',
+    'T':'THR',
+    'V':'VAL',
+    'W':'TRP',
+    'Y':'TYR',
+    'ALA':'A',
+    'CYS':'C',
+    'ASP':'D',
+    'GLU':'E',
+    'PHE':'F',
+    'GLY':'G',
+    'HIS':'H',
+    'ILE':'I',
+    'LYS':'K',
+    'LEU':'L',
+    'MET':'M',
+    'ASN':'N',
+    'PRO':'P',
+    'GLN':'Q',
+    'ARG':'R',
+    'SER':'S',
+    'THR':'T',
+    'VAL':'V',
+    'TRP':'W',
+    'TYR':'Y'
+}
+
+
 def write_to_file(file_name, data, mode):
     with open(file_name, mode) as file:
         file.write(data + "\n")
@@ -69,3 +113,41 @@ def output_distance_matrix(save_folder, distance_matrix, prefix=None):
     plt.colorbar(map)
     plt.savefig(os.path.join(save_folder, "{}distance_matrix.png".format((prefix + "_") if prefix else "")))
     plt.close()
+
+
+def write_pdb(residue_matrix, seq, name):
+    "ATOM      2  CA  MET A   1      -2.112  80.521  14.723  1.00 27.66           C  "
+    with open("{}.pdb".format(name), 'w+') as pdb_file:
+        for i, residue in enumerate(residue_matrix):
+            # pdb_file.write(
+            #     "ATOM\t{}\tCA\t{}\tA\t{}\t{}\t{}\t{}\t1\t1\tC\n".format(
+            #         i,
+            #         aa_dict[seq[i]],
+            #         i,
+            #         np.round(residue_matrix[i][0], 4),
+            #         np.round(residue_matrix[i][1], 4),
+            #         np.round(residue_matrix[i][2], 4)
+            #     )
+            # )
+            pdb_file.write("{}{} {} {} {}{}    {}{}{}{}{}\n".format(
+                "ATOM".ljust(6),
+                str(i).rjust(5),
+                "CA".center(4),
+                aa_dict[seq[i]].ljust(3),
+                "A".rjust(1),
+                str(i).rjust(4),
+                str('%8.3f' % (float(residue_matrix[i][0]))).rjust(8),
+                str('%8.3f' % (float(residue_matrix[i][1]))).rjust(8),
+                str('%8.3f' % (float(residue_matrix[i][2]))).rjust(8),
+                str('%6.2f' % (float(1))).rjust(6),
+                str('%6.2f' % (float(1))).rjust(6),
+                "C".rjust(12)
+            ))
+
+        pdb_file.write("TER")
+
+    # parser = PDB.PDBParser()
+    # chain = parser.get_structure(id='temp', file="{}.pdb".format(name))
+    # io = PDB.PDBIO()
+    # io.set_structure(chain)
+    # io.save("{}.pdb".format(name))

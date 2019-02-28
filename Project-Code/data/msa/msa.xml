@@ -5,9 +5,9 @@
   <BlastOutput_version>BLASTP 2.8.1+</BlastOutput_version>
   <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
   <BlastOutput_db>pdbaa</BlastOutput_db>
-  <BlastOutput_query-ID>Query_5169</BlastOutput_query-ID>
+  <BlastOutput_query-ID>Query_123027</BlastOutput_query-ID>
   <BlastOutput_query-def>unnamed protein product</BlastOutput_query-def>
-  <BlastOutput_query-len>75</BlastOutput_query-len>
+  <BlastOutput_query-len>323</BlastOutput_query-len>
   <BlastOutput_param>
     <Parameters>
       <Parameters_matrix>BLOSUM62</Parameters_matrix>
@@ -20,791 +20,1407 @@
 <BlastOutput_iterations>
 <Iteration>
   <Iteration_iter-num>1</Iteration_iter-num>
-  <Iteration_query-ID>Query_5169</Iteration_query-ID>
+  <Iteration_query-ID>Query_123027</Iteration_query-ID>
   <Iteration_query-def>unnamed protein product</Iteration_query-def>
-  <Iteration_query-len>75</Iteration_query-len>
+  <Iteration_query-len>323</Iteration_query-len>
 <Iteration_hits>
 <Hit>
   <Hit_num>1</Hit_num>
-  <Hit_id>gi|1048348236|pdb|2N64|A</Hit_id>
-  <Hit_def>Chain A, NMR Structure of the C-terminal Coiled-Coil Domain of CIN85 &gt;gi|1048348237|pdb|2N64|B Chain B, NMR Structure of the C-terminal Coiled-Coil Domain of CIN85 &gt;gi|1048348238|pdb|2N64|C Chain C, NMR Structure of the C-terminal Coiled-Coil Domain of CIN85</Hit_def>
-  <Hit_accession>2N64_A</Hit_accession>
-  <Hit_len>75</Hit_len>
+  <Hit_id>gi|1048349260|pdb|5J43|E</Hit_id>
+  <Hit_def>Chain E, Cdia-ct From Uropathogenic Escherichia Coli In Complex With Cysk &gt;gi|1048349262|pdb|5J43|A Chain A, Cdia-ct From Uropathogenic Escherichia Coli In Complex With Cysk &gt;gi|1048349269|pdb|5J5V|A Chain A, Cdia-ct From Uropathogenic Escherichia Coli In Complex With Cognate Immunity Protein And Cysk &gt;gi|1048349272|pdb|5J5V|D Chain D, Cdia-ct From Uropathogenic Escherichia Coli In Complex With Cognate Immunity Protein And Cysk</Hit_def>
+  <Hit_accession>5J43_E</Hit_accession>
+  <Hit_len>323</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>146.362</Hsp_bit-score>
-      <Hsp_score>368</Hsp_score>
-      <Hsp_evalue>1.07138e-47</Hsp_evalue>
+      <Hsp_bit-score>648.277</Hsp_bit-score>
+      <Hsp_score>1671</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
       <Hsp_query-from>1</Hsp_query-from>
-      <Hsp_query-to>75</Hsp_query-to>
+      <Hsp_query-to>323</Hsp_query-to>
       <Hsp_hit-from>1</Hsp_hit-from>
-      <Hsp_hit-to>75</Hsp_hit-to>
+      <Hsp_hit-to>323</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>75</Hsp_identity>
-      <Hsp_positive>75</Hsp_positive>
+      <Hsp_identity>322</Hsp_identity>
+      <Hsp_positive>322</Hsp_positive>
       <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>75</Hsp_align-len>
-      <Hsp_qseq>GHMEGKPKMEPAASSQAAVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQSK</Hsp_qseq>
-      <Hsp_hseq>GHMEGKPKMEPAASSQAAVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQSK</Hsp_hseq>
-      <Hsp_midline>GHMEGKPKMEPAASSQAAVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQSK</Hsp_midline>
+      <Hsp_align-len>323</Hsp_align-len>
+      <Hsp_qseq>MGKIFEDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_qseq>
+      <Hsp_hseq>MGKIFEDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSVXCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_hseq>
+      <Hsp_midline>MGKIFEDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSV CRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>2</Hit_num>
-  <Hit_id>gi|1048348296|pdb|5ABS|A</Hit_id>
-  <Hit_def>Chain A, SH3 DOMAIN-CONTAINING KINASE-BINDING PROTEIN 1</Hit_def>
-  <Hit_accession>5ABS_A</Hit_accession>
-  <Hit_len>66</Hit_len>
+  <Hit_id>gi|6980381|pdb|1OAS|A</Hit_id>
+  <Hit_def>Chain A, O-Acetylserine Sulfhydrylase From Salmonella Typhimurium &gt;gi|6980382|pdb|1OAS|B Chain B, O-Acetylserine Sulfhydrylase From Salmonella Typhimurium &gt;gi|11514511|pdb|1FCJ|A Chain A, CRYSTAL STRUCTURE OF OASS COMPLEXED WITH CHLORIDE AND SULFATE &gt;gi|11514512|pdb|1FCJ|B Chain B, CRYSTAL STRUCTURE OF OASS COMPLEXED WITH CHLORIDE AND SULFATE &gt;gi|11514513|pdb|1FCJ|C Chain C, CRYSTAL STRUCTURE OF OASS COMPLEXED WITH CHLORIDE AND SULFATE &gt;gi|11514514|pdb|1FCJ|D Chain D, CRYSTAL STRUCTURE OF OASS COMPLEXED WITH CHLORIDE AND SULFATE</Hit_def>
+  <Hit_accession>1OAS_A</Hit_accession>
+  <Hit_len>322</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>114.39</Hsp_bit-score>
-      <Hsp_score>285</Hsp_score>
-      <Hsp_evalue>3.74876e-35</Hsp_evalue>
-      <Hsp_query-from>10</Hsp_query-from>
-      <Hsp_query-to>72</Hsp_query-to>
-      <Hsp_hit-from>4</Hsp_hit-from>
-      <Hsp_hit-to>66</Hsp_hit-to>
+      <Hsp_bit-score>633.639</Hsp_bit-score>
+      <Hsp_score>1633</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>322</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>61</Hsp_identity>
-      <Hsp_positive>61</Hsp_positive>
+      <Hsp_identity>311</Hsp_identity>
+      <Hsp_positive>320</Hsp_positive>
       <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>63</Hsp_align-len>
-      <Hsp_qseq>EPAASSQAAVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKAL</Hsp_qseq>
-      <Hsp_hseq>EPAASSQAAVEELRTQVRELRSIIETXKDQQKREIKQLLSELDEEKKIRLRLQXEVNDIKKAL</Hsp_hseq>
-      <Hsp_midline>EPAASSQAAVEELRTQVRELRSIIET KDQQKREIKQLLSELDEEKKIRLRLQ EVNDIKKAL</Hsp_midline>
+      <Hsp_align-len>321</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_qseq>
+      <Hsp_hseq>KIYEDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTNGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASDPQKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFISGVGTGGTLTGVTRYIKGTKGKTDLITVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPGNLDLKLIDKVVGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_hseq>
+      <Hsp_midline>KI+EDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPT+GNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVAS+P+KYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFI+GVGTGGTLTGV+RYIKGTKGKTDLI+VAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIP NLDLKL+DKV+GITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>3</Hit_num>
-  <Hit_id>gi|1569047924|pdb|6DZ7|B</Hit_id>
-  <Hit_def>Chain B, Plasma membrane channel protein (Aqy1), putative &gt;gi|1569047925|pdb|6DZ7|A Chain A, Plasma membrane channel protein (Aqy1), putative &gt;gi|1569047926|pdb|6E0H|B Chain B, Plasma membrane channel protein (Aqy1), putative &gt;gi|1569047927|pdb|6E0H|A Chain A, Plasma membrane channel protein (Aqy1), putative &gt;gi|1569047929|pdb|6E1O|B Chain B, Plasma membrane channel protein (Aqy1), putative &gt;gi|1569047930|pdb|6E1O|A Chain A, Plasma membrane channel protein (Aqy1), putative</Hit_def>
-  <Hit_accession>6DZ7_B</Hit_accession>
-  <Hit_len>735</Hit_len>
+  <Hit_id>gi|7767090|pdb|1D6S|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of The K41a Mutant Of O-Acetylserine Sulfhydrylase Complexed In External Aldimine Linkage With Methionine &gt;gi|7767091|pdb|1D6S|B Chain B, Crystal Structure Of The K41a Mutant Of O-Acetylserine Sulfhydrylase Complexed In External Aldimine Linkage With Methionine</Hit_def>
+  <Hit_accession>1D6S_A</Hit_accession>
+  <Hit_len>322</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>28.1054</Hsp_bit-score>
-      <Hsp_score>61</Hsp_score>
-      <Hsp_evalue>0.973633</Hsp_evalue>
-      <Hsp_query-from>8</Hsp_query-from>
-      <Hsp_query-to>70</Hsp_query-to>
-      <Hsp_hit-from>634</Hsp_hit-from>
-      <Hsp_hit-to>696</Hsp_hit-to>
+      <Hsp_bit-score>631.328</Hsp_bit-score>
+      <Hsp_score>1627</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>322</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>14</Hsp_identity>
-      <Hsp_positive>29</Hsp_positive>
+      <Hsp_identity>310</Hsp_identity>
+      <Hsp_positive>319</Hsp_positive>
       <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>63</Hsp_align-len>
-      <Hsp_qseq>KMEPAASSQAAVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKK</Hsp_qseq>
-      <Hsp_hseq>KLEPPNTRRERIERFMMRKRYLDTVLSAESDDDADEVKGVVSSIPPSEITRESLEQDARDWSK</Hsp_hseq>
-      <Hsp_midline>K+EP  + +  +E    + R L +++    D    E+K ++S +   +  R  L+ +  D  K</Hsp_midline>
+      <Hsp_align-len>321</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_qseq>
+      <Hsp_hseq>KIYEDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSVACRIGANMIWDAEKRGVLKPGVELVEPTNGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASDPQKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFISGVGTGGTLTGVTRYIKGTKGKTDLITVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPGNLDLKLIDKVVGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_hseq>
+      <Hsp_midline>KI+EDNSLTIGHTPLVRLNRIGNGRILAKVESRNPSFSV CRIGANMIWDAEKRGVLKPGVELVEPT+GNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVAS+P+KYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFI+GVGTGGTLTGV+RYIKGTKGKTDLI+VAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIP NLDLKL+DKV+GITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>4</Hit_num>
-  <Hit_id>gi|90108755|pdb|2AU1|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of Group A Streptococcus Mac-1 Orthorhombic Form</Hit_def>
-  <Hit_accession>2AU1_A</Hit_accession>
-  <Hit_len>292</Hit_len>
+  <Hit_id>gi|829581823|pdb|4ZU6|X</Hit_id>
+  <Hit_def>Chain X, Crystal Structure Of O-acetylserine Sulfhydrylase From Haemophilus Influenzae In Complex With Pre-reactive O-acetyl Serine, Alpha- Aminoacrylate Reaction Intermediate And Peptide Inhibitor At The Resolution Of 2.25a &gt;gi|927262439|pdb|5DBE|X Chain X, Crystal Structure Of O-acetylserine Sulfhydrylase From Haemophilus Influenzae In Complex With Pre-reactive O-acetyl Serine, Alpha- Aminoacrylate Reaction Intermediate And Peptide Inhibitor At The Resolution Of 2.25a</Hit_def>
+  <Hit_accession>4ZU6_X</Hit_accession>
+  <Hit_len>332</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>27.335</Hsp_bit-score>
-      <Hsp_score>59</Hsp_score>
-      <Hsp_evalue>1.44143</Hsp_evalue>
-      <Hsp_query-from>38</Hsp_query-from>
-      <Hsp_query-to>75</Hsp_query-to>
-      <Hsp_hit-from>61</Hsp_hit-from>
-      <Hsp_hit-to>97</Hsp_hit-to>
+      <Hsp_bit-score>407.527</Hsp_bit-score>
+      <Hsp_score>1046</Hsp_score>
+      <Hsp_evalue>5.97377e-143</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>327</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>14</Hsp_identity>
-      <Hsp_positive>25</Hsp_positive>
-      <Hsp_gaps>1</Hsp_gaps>
-      <Hsp_align-len>38</Hsp_align-len>
-      <Hsp_qseq>DQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQSK</Hsp_qseq>
-      <Hsp_hseq>DQNKDQIKRYLEEHPEKQKINFNGE-QMFDVKEAIDTK</Hsp_hseq>
-      <Hsp_midline>DQ K +IK+ L E  E++KI    + ++ D+K+A+ +K</Hsp_midline>
+      <Hsp_identity>219</Hsp_identity>
+      <Hsp_positive>262</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVKCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTMPETMSLERKRLLCGLGVNLVLTEGAKGMKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SVKCRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLTMPETMS+ER++LL  LG NLVLTEGAKGMKGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>5</Hit_num>
-  <Hit_id>gi|60594490|pdb|1Y08|A</Hit_id>
-  <Hit_def>Chain A, Structure Of The Streptococcal Endopeptidase Ides, A Novel Cysteine Proteinase With Strict Specificity For Igg</Hit_def>
-  <Hit_accession>1Y08_A</Hit_accession>
-  <Hit_len>323</Hit_len>
+  <Hit_id>gi|927262441|pdb|5DBH|X</Hit_id>
+  <Hit_def>Chain X, Crystal Structure Of O-acetylserine Sulfhydrylase From Haemophilus Influenzae In Complex With Reaction Intermediate Alpha-aminoacrylate</Hit_def>
+  <Hit_accession>5DBH_X</Hit_accession>
+  <Hit_len>322</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>27.335</Hsp_bit-score>
-      <Hsp_score>59</Hsp_score>
-      <Hsp_evalue>1.45594</Hsp_evalue>
-      <Hsp_query-from>38</Hsp_query-from>
-      <Hsp_query-to>75</Hsp_query-to>
-      <Hsp_hit-from>92</Hsp_hit-from>
-      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_bit-score>406.757</Hsp_bit-score>
+      <Hsp_score>1044</Hsp_score>
+      <Hsp_evalue>7.04079e-143</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>14</Hsp_identity>
-      <Hsp_positive>25</Hsp_positive>
-      <Hsp_gaps>1</Hsp_gaps>
-      <Hsp_align-len>38</Hsp_align-len>
-      <Hsp_qseq>DQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQSK</Hsp_qseq>
-      <Hsp_hseq>DQNKDQIKRYLEEHPEKQKINFNGE-QMFDVKEAIDTK</Hsp_hseq>
-      <Hsp_midline>DQ K +IK+ L E  E++KI    + ++ D+K+A+ +K</Hsp_midline>
+      <Hsp_identity>219</Hsp_identity>
+      <Hsp_positive>262</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVKCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTMPETMSLERKRLLCGLGVNLVLTEGAKGMKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SVKCRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLTMPETMS+ER++LL  LG NLVLTEGAKGMKGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>6</Hit_num>
-  <Hit_id>gi|90108756|pdb|2AVW|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of Monoclinic Form Of Streptococcus Mac-1 &gt;gi|90108757|pdb|2AVW|B Chain B, Crystal Structure Of Monoclinic Form Of Streptococcus Mac-1 &gt;gi|90108758|pdb|2AVW|C Chain C, Crystal Structure Of Monoclinic Form Of Streptococcus Mac-1 &gt;gi|90108759|pdb|2AVW|D Chain D, Crystal Structure Of Monoclinic Form Of Streptococcus Mac-1 &gt;gi|90108760|pdb|2AVW|E Chain E, Crystal Structure Of Monoclinic Form Of Streptococcus Mac-1 &gt;gi|90108761|pdb|2AVW|F Chain F, Crystal Structure Of Monoclinic Form Of Streptococcus Mac-1</Hit_def>
-  <Hit_accession>2AVW_A</Hit_accession>
-  <Hit_len>311</Hit_len>
+  <Hit_id>gi|66360676|pdb|1Y7L|A</Hit_id>
+  <Hit_def>Chain A, O-Acetylserine Sulfhydrylase Complex &gt;gi|268612400|pdb|3IQG|X Chain X, Structure Of O-Acetylserine Sulfhydrylase In Complex With Peptide Mnwni &gt;gi|268612402|pdb|3IQH|X Chain X, Structure Of O-Acetylserine Sulfhydrylase In Complex With Peptide Mnydi &gt;gi|268612404|pdb|3IQI|X Chain X, Structure Of O-Acetylserine Sulfhydrylase In Complex With Peptide Mneni &gt;gi|557804863|pdb|4HO1|X Chain X, The Crystal Structure Of Haemophilus Influenzae O-acetylserine Sulfhydrylase At 1.85a Resolution &gt;gi|662702142|pdb|4LI3|X Chain X, Crystal Structure Of O-acetylserine Sulfhydrylase From Haemophilus Influenzae In Complex With High Affinity Inhibitory Peptide From Serine Acetyl Transferase Of Salmonella Typhimurium</Hit_def>
+  <Hit_accession>1Y7L_A</Hit_accession>
+  <Hit_len>316</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>27.335</Hsp_bit-score>
-      <Hsp_score>59</Hsp_score>
-      <Hsp_evalue>1.73254</Hsp_evalue>
-      <Hsp_query-from>38</Hsp_query-from>
-      <Hsp_query-to>75</Hsp_query-to>
-      <Hsp_hit-from>80</Hsp_hit-from>
-      <Hsp_hit-to>116</Hsp_hit-to>
+      <Hsp_bit-score>404.831</Hsp_bit-score>
+      <Hsp_score>1039</Hsp_score>
+      <Hsp_evalue>4.13014e-142</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>311</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>14</Hsp_identity>
-      <Hsp_positive>25</Hsp_positive>
-      <Hsp_gaps>1</Hsp_gaps>
-      <Hsp_align-len>38</Hsp_align-len>
-      <Hsp_qseq>DQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQSK</Hsp_qseq>
-      <Hsp_hseq>DQNKDQIKRYLEEHPEKQKINFNGE-QMFDVKEAIDTK</Hsp_hseq>
-      <Hsp_midline>DQ K +IK+ L E  E++KI    + ++ D+K+A+ +K</Hsp_midline>
+      <Hsp_identity>218</Hsp_identity>
+      <Hsp_positive>261</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVXCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTMPETMSLERKRLLCGLGVNLVLTEGAKGMKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SV CRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLTMPETMS+ER++LL  LG NLVLTEGAKGMKGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>7</Hit_num>
-  <Hit_id>gi|71042009|pdb|1YA9|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of The 22kda N-Terminal Fragment Of Mouse Apolipoprotein E</Hit_def>
-  <Hit_accession>1YA9_A</Hit_accession>
-  <Hit_len>181</Hit_len>
+  <Hit_id>gi|829581821|pdb|4ZU1|X</Hit_id>
+  <Hit_def>Chain X, Crystal Structure Of O-acetylserine Sulfhydrylase From Haemophilus Influenzae In Complex With O-acetyl Serine And Peptide Inhibitor</Hit_def>
+  <Hit_accession>4ZU1_X</Hit_accession>
+  <Hit_len>332</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.9498</Hsp_bit-score>
-      <Hsp_score>58</Hsp_score>
-      <Hsp_evalue>2.31667</Hsp_evalue>
-      <Hsp_query-from>17</Hsp_query-from>
-      <Hsp_query-to>72</Hsp_query-to>
-      <Hsp_hit-from>97</Hsp_hit-from>
-      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_bit-score>405.216</Hsp_bit-score>
+      <Hsp_score>1040</Hsp_score>
+      <Hsp_evalue>4.71736e-142</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>327</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>19</Hsp_identity>
-      <Hsp_positive>32</Hsp_positive>
+      <Hsp_identity>218</Hsp_identity>
+      <Hsp_positive>261</Hsp_positive>
       <Hsp_gaps>2</Hsp_gaps>
-      <Hsp_align-len>56</Hsp_align-len>
-      <Hsp_qseq>AAVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKAL</Hsp_qseq>
-      <Hsp_hseq>ADMEDLRNRLGQYRNEVHTMLGQSTEEIRARLS--THLRKMRKRLMRDAEDLQKRL</Hsp_hseq>
-      <Hsp_midline>A +E+LR ++ + R+ + TM  Q   EI+  LS     +K+R RL  +  D++K L</Hsp_midline>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVXCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTMPETMSLERKRLLCGLGVNLVLTEGAKGMKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SV CRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLTMPETMS+ER++LL  LG NLVLTEGAKGMKGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>8</Hit_num>
-  <Hit_id>gi|358009669|pdb|3TAI|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of Nura &gt;gi|358009670|pdb|3TAI|B Chain B, Crystal Structure Of Nura &gt;gi|358009671|pdb|3TAL|A Chain A, Crystal Structure Of Nura With Manganese &gt;gi|358009672|pdb|3TAL|B Chain B, Crystal Structure Of Nura With Manganese</Hit_def>
-  <Hit_accession>3TAI_A</Hit_accession>
-  <Hit_len>471</Hit_len>
+  <Hit_id>gi|756142470|pdb|4ORE|X</Hit_id>
+  <Hit_def>Chain X, Cysteine synthase</Hit_def>
+  <Hit_accession>4ORE_X</Hit_accession>
+  <Hit_len>333</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.5646</Hsp_bit-score>
-      <Hsp_score>57</Hsp_score>
-      <Hsp_evalue>3.43285</Hsp_evalue>
-      <Hsp_query-from>33</Hsp_query-from>
-      <Hsp_query-to>73</Hsp_query-to>
-      <Hsp_hit-from>254</Hsp_hit-from>
-      <Hsp_hit-to>291</Hsp_hit-to>
+      <Hsp_bit-score>405.216</Hsp_bit-score>
+      <Hsp_score>1040</Hsp_score>
+      <Hsp_evalue>4.88467e-142</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>328</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>24</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>41</Hsp_align-len>
-      <Hsp_qseq>IETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQ</Hsp_qseq>
-      <Hsp_hseq>IEVLESSRGKSVDELLQELDEEK---VELYLGKDDIYDALH</Hsp_hseq>
-      <Hsp_midline>IE ++  + + + +LL ELDEEK   + L +  +DI  AL </Hsp_midline>
+      <Hsp_identity>218</Hsp_identity>
+      <Hsp_positive>261</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVXCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTMPETMSLERKRLLCGLGVNLVLTEGAKGMKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SV CRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLTMPETMS+ER++LL  LG NLVLTEGAKGMKGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>9</Hit_num>
-  <Hit_id>gi|281307084|pdb|3HXU|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure of catalytic fragment of E. coli AlaRS in complex with AlaSA &gt;gi|281307085|pdb|3HXV|A Chain A, Crystal Structure of catalytic fragment of E. coli AlaRS in complex with GlySA &gt;gi|281307086|pdb|3HXW|A Chain A, Crystal Structure of catalytic fragment of E. coli AlaRS in complex with SerSA &gt;gi|281307087|pdb|3HXX|A Chain A, Crystal Structure of catalytic fragment of E. coli AlaRS in complex with AMPPCP &gt;gi|281307088|pdb|3HXY|A Chain A, Crystal Structure of catalytic fragment of E. coli AlaRS in complex with AMPPCP, Ala-AMP and PCP</Hit_def>
-  <Hit_accession>3HXU_A</Hit_accession>
-  <Hit_len>441</Hit_len>
+  <Hit_id>gi|728055283|pdb|4NU8|X</Hit_id>
+  <Hit_def>Chain X, Crystal Structure Of O-acetylserine Sulfhydrylase From Haemophilus Influenzae In Complex With High Affinity Inhibitory Peptide From Serine Acetyl Transferase Of Salmonella Typhimurium At 2.0 A</Hit_def>
+  <Hit_accession>4NU8_X</Hit_accession>
+  <Hit_len>322</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.5646</Hsp_bit-score>
-      <Hsp_score>57</Hsp_score>
-      <Hsp_evalue>3.5559</Hsp_evalue>
-      <Hsp_query-from>17</Hsp_query-from>
-      <Hsp_query-to>54</Hsp_query-to>
-      <Hsp_hit-from>343</Hsp_hit-from>
-      <Hsp_hit-to>380</Hsp_hit-to>
+      <Hsp_bit-score>404.831</Hsp_bit-score>
+      <Hsp_score>1039</Hsp_score>
+      <Hsp_evalue>5.096e-142</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>12</Hsp_identity>
-      <Hsp_positive>26</Hsp_positive>
-      <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>38</Hsp_align-len>
-      <Hsp_qseq>AAVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEE</Hsp_qseq>
-      <Hsp_hseq>SAGEDLKRQQAQVEQVLKTEEEQFARTLERGLALLDEE</Hsp_hseq>
-      <Hsp_midline>+A E+L+ Q  ++  +++T ++Q  R +++ L+ LDEE</Hsp_midline>
+      <Hsp_identity>218</Hsp_identity>
+      <Hsp_positive>261</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVXCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTMPETMSLERKRLLCGLGVNLVLTEGAKGMKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SV CRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLTMPETMS+ER++LL  LG NLVLTEGAKGMKGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>10</Hit_num>
-  <Hit_id>gi|281307089|pdb|3HXZ|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure of catalytic fragment of E. coli AlaRS G237A in complex with AlaSA &gt;gi|281307090|pdb|3HXZ|B Chain B, Crystal Structure of catalytic fragment of E. coli AlaRS G237A in complex with AlaSA &gt;gi|281307091|pdb|3HXZ|C Chain C, Crystal Structure of catalytic fragment of E. coli AlaRS G237A in complex with AlaSA &gt;gi|281307092|pdb|3HXZ|D Chain D, Crystal Structure of catalytic fragment of E. coli AlaRS G237A in complex with AlaSA &gt;gi|281307093|pdb|3HY0|A Chain A, Crystal Structure of catalytic fragment of E. coli AlaRS G237A in complex with GlySA &gt;gi|281307094|pdb|3HY0|B Chain B, Crystal Structure of catalytic fragment of E. coli AlaRS G237A in complex with GlySA &gt;gi|281307095|pdb|3HY1|A Chain A, Crystal Structure of catalytic fragment of E. coli AlaRS G237A in complex with SerSA &gt;gi|281307096|pdb|3HY1|B Chain B, Crystal Structure of catalytic fragment of E. coli AlaRS G237A in complex with SerSA</Hit_def>
-  <Hit_accession>3HXZ_A</Hit_accession>
-  <Hit_len>441</Hit_len>
+  <Hit_id>gi|1386813288|pdb|5XCN|X</Hit_id>
+  <Hit_def>Chain X, Crystal structure of M120A mutant of O-acetyl-L-serine sulfahydrylase from Haemophilus influenzae &gt;gi|1474892328|pdb|6AIF|A Chain A, Crystal structure of M120A mutant of O-acetylserine sulfhydrylase from Haemophilus influenzae in complex with high affinity inhibitory peptide from serine acetyl transferase of Salmonella typhimurium</Hit_def>
+  <Hit_accession>5XCN_X</Hit_accession>
+  <Hit_len>350</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.5646</Hsp_bit-score>
-      <Hsp_score>57</Hsp_score>
-      <Hsp_evalue>3.66274</Hsp_evalue>
-      <Hsp_query-from>17</Hsp_query-from>
-      <Hsp_query-to>54</Hsp_query-to>
-      <Hsp_hit-from>343</Hsp_hit-from>
-      <Hsp_hit-to>380</Hsp_hit-to>
+      <Hsp_bit-score>402.519</Hsp_bit-score>
+      <Hsp_score>1033</Hsp_score>
+      <Hsp_evalue>1.10067e-140</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>345</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>12</Hsp_identity>
-      <Hsp_positive>26</Hsp_positive>
-      <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>38</Hsp_align-len>
-      <Hsp_qseq>AAVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEE</Hsp_qseq>
-      <Hsp_hseq>SAGEDLKRQQAQVEQVLKTEEEQFARTLERGLALLDEE</Hsp_hseq>
-      <Hsp_midline>+A E+L+ Q  ++  +++T ++Q  R +++ L+ LDEE</Hsp_midline>
+      <Hsp_identity>217</Hsp_identity>
+      <Hsp_positive>260</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVXCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTMPETMSLERKRLLCGLGVNLVLTEGAKGAKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SV CRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLTMPETMS+ER++LL  LG NLVLTEGAKG KGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>11</Hit_num>
-  <Hit_id>gi|1474891951|pdb|6GZH|B</Hit_id>
-  <Hit_def>Chain B, Crystal Structure of Human CDK9/cyclinT1 with A86</Hit_def>
-  <Hit_accession>6GZH_B</Hit_accession>
-  <Hit_len>726</Hit_len>
+  <Hit_id>gi|1386813289|pdb|5XCP|X</Hit_id>
+  <Hit_def>Chain X, Crystal structure of M92A mutant of O-acetyl-L-serine sulfhydrylase from Haemophilus influenzae</Hit_def>
+  <Hit_accession>5XCP_X</Hit_accession>
+  <Hit_len>350</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>3.83376</Hsp_evalue>
-      <Hsp_query-from>19</Hsp_query-from>
-      <Hsp_query-to>64</Hsp_query-to>
-      <Hsp_hit-from>397</Hsp_hit-from>
-      <Hsp_hit-to>442</Hsp_hit-to>
+      <Hsp_bit-score>402.519</Hsp_bit-score>
+      <Hsp_score>1033</Hsp_score>
+      <Hsp_evalue>1.10067e-140</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>345</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>14</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>46</Hsp_align-len>
-      <Hsp_qseq>VEELRTQVRELRSIIETMKDQQKREIKQLLSELDEEKKIRLRLQME</Hsp_qseq>
-      <Hsp_hseq>AEELAAQKRQLENMEANVKSQYAYAAQNLLSHHDSHSSVILKMPIE</Hsp_hseq>
-      <Hsp_midline> EEL  Q R+L ++   +K Q     + LLS  D    + L++ +E</Hsp_midline>
+      <Hsp_identity>217</Hsp_identity>
+      <Hsp_positive>260</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVXCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTAPETMSLERKRLLCGLGVNLVLTEGAKGMKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SV CRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLT PETMS+ER++LL  LG NLVLTEGAKGMKGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>12</Hit_num>
-  <Hit_id>gi|358009673|pdb|3TAZ|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of Nura Bound To Damp And Manganese &gt;gi|358009674|pdb|3TAZ|B Chain B, Crystal Structure Of Nura Bound To Damp And Manganese</Hit_def>
-  <Hit_accession>3TAZ_A</Hit_accession>
-  <Hit_len>471</Hit_len>
+  <Hit_id>gi|1386813290|pdb|5XCW|X</Hit_id>
+  <Hit_def>Chain X, Crystal structure of M92A-M120A double mutant of O-acetyl-L-serine sulfhydrylase from Haemophilus influenzae</Hit_def>
+  <Hit_accession>5XCW_X</Hit_accession>
+  <Hit_len>350</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>3.94138</Hsp_evalue>
-      <Hsp_query-from>33</Hsp_query-from>
-      <Hsp_query-to>73</Hsp_query-to>
-      <Hsp_hit-from>254</Hsp_hit-from>
-      <Hsp_hit-to>291</Hsp_hit-to>
+      <Hsp_bit-score>399.823</Hsp_bit-score>
+      <Hsp_score>1026</Hsp_score>
+      <Hsp_evalue>1.19207e-139</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>345</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>24</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>41</Hsp_align-len>
-      <Hsp_qseq>IETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQ</Hsp_qseq>
-      <Hsp_hseq>IEVLESSRGKSVDELLQELDEEK---VELYLGKDDIYDALH</Hsp_hseq>
-      <Hsp_midline>IE ++  + + + +LL ELDEEK   + L +  +DI  AL </Hsp_midline>
+      <Hsp_identity>216</Hsp_identity>
+      <Hsp_positive>259</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IYADNSYSIGNTPLVRLKHFGHNGNVVVKIEGRNPSYSVXCRIGANMVWQAEKDGTLTKGKEIVDATSGNTGIALAYVAAARGYKITLTAPETMSLERKRLLCGLGVNLVLTEGAKGAKGAIAKAEEIVASDPSRYVMLKQFENPANPQIHRETTGPEIWKDTDGKVDVVVAGVGTGGSITGISRAIKLDFGK-QITSVAVEPVESPVISQTLAGEEVKPGPHKIQGIGAGFIPKNLDLSIIDRVETVDSDTALATARRLMAEEGILAGISSGAAVAAADRLAKLPEFADKLIVVILPSASERYLSTALF</Hsp_hseq>
+      <Hsp_midline>I+ DNS +IG+TPLVRL   G NG ++ K+E RNPS+SV CRIGANM+W AEK G L  G E+V+ TSGNTGIALAYVAAARGYK+TLT PETMS+ER++LL  LG NLVLTEGAKG KGAI KAEEIVAS+P +Y++L+QF NPANP+IH +TTGPEIW+DTDG+VDV +AGVGTGG++TG+SR IK   GK  + SVAVEP +SPVI+Q LAGEE+KPGPHKIQGIGAGFIP NLDL ++D+V  + ++ A++TARRLM EEGILAGISSGAAVAAA +L +   F +K IVVILPS+ ERYLSTALF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>13</Hit_num>
-  <Hit_id>gi|1304111360|pdb|5UKV|A</Hit_id>
-  <Hit_def>Chain A, DHp domain of PhoR of M. tuberculosis - SeMet &gt;gi|1304111361|pdb|5UKV|B Chain B, DHp domain of PhoR of M. tuberculosis - SeMet</Hit_def>
-  <Hit_accession>5UKV_A</Hit_accession>
-  <Hit_len>74</Hit_len>
+  <Hit_id>gi|1177806774|pdb|5XA2|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure of O-acetylserine sulfhydrylase from Planctomyces Limnophila &gt;gi|1177806775|pdb|5XA2|B Chain B, Crystal Structure of O-acetylserine sulfhydrylase from Planctomyces Limnophila</Hit_def>
+  <Hit_accession>5XA2_A</Hit_accession>
+  <Hit_len>309</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.409</Hsp_bit-score>
-      <Hsp_score>54</Hsp_score>
-      <Hsp_evalue>4.00887</Hsp_evalue>
-      <Hsp_query-from>18</Hsp_query-from>
-      <Hsp_query-to>54</Hsp_query-to>
-      <Hsp_hit-from>21</Hsp_hit-from>
-      <Hsp_hit-to>57</Hsp_hit-to>
+      <Hsp_bit-score>370.548</Hsp_bit-score>
+      <Hsp_score>950</Hsp_score>
+      <Hsp_evalue>8.73474e-129</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>12</Hsp_identity>
-      <Hsp_positive>19</Hsp_positive>
-      <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>37</Hsp_align-len>
-      <Hsp_qseq>AVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEE</Hsp_qseq>
-      <Hsp_hseq>ASHELRTPLTTIRGFAELYRQGAARDVGXLLSRIESE</Hsp_hseq>
-      <Hsp_midline>A  ELRT +  +R   E  +    R++  LLS ++ E</Hsp_midline>
+      <Hsp_identity>200</Hsp_identity>
+      <Hsp_positive>241</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADL</Hsp_qseq>
+      <Hsp_hseq>IFKDNSESIGRTPLVQINRLTAGLSSRVLAKIEGRNPAYSVXCRIGAAMIWDAEQSGKLKPGMHVVEPTSGNTGIALAFVCAARGYKLTLTMPETMSIERRMMLKSFGADLVLTPGADGMKGAISKAEELAAQ--PGWFIPQQFKNPANPAIHVKTTGPEIWNDTEGQVDVFVAGVGTGGTITGVARFLKHEK-KHPVHVVAVEPAASPVLAGGPAGR------HKIQGIGAGFVPDTFDRSVVDEILSVTDDEAIETARKLAMEEGISCGISCGAAMAGALKVAARPEFAGKTIVTVLPDAGERYLSTALFENL</Hsp_hseq>
+      <Hsp_midline>IF+DNS +IG TPLV++NR+  G   R+LAK+E RNP++SV CRIGA MIWDAE+ G LKPG+ +VEPTSGNTGIALA+V AARGYKLTLTMPETMSIERR +LK+ GA+LVLT GA GMKGAI KAEE+ A     + + QQF NPANP IH KTTGPEIW DT+GQVDVF+AGVGTGGT+TGV+R++K  K K  +  VAVEP  SPV+A   AG       HKIQGIGAGF+P   D  +VD+++ +T++EAI TAR+L  EEGI  GIS GAA+A ALK+     F  K IV +LP +GERYLSTALF +L</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>14</Hit_num>
-  <Hit_id>gi|1304111362|pdb|5UKY|A</Hit_id>
-  <Hit_def>Chain A, DHp domain of PhoR of M. tuberculosis - native data &gt;gi|1304111363|pdb|5UKY|B Chain B, DHp domain of PhoR of M. tuberculosis - native data</Hit_def>
-  <Hit_accession>5UKY_A</Hit_accession>
-  <Hit_len>74</Hit_len>
+  <Hit_id>gi|1393955700|pdb|5XOQ|A</Hit_id>
+  <Hit_def>Chain A, Crystal structure of O-Acetylserine Sulfhydrylase with bound Transcription Factor peptide inhibitor from Planctomyces limnophilus &gt;gi|1393955701|pdb|5XOQ|B Chain B, Crystal structure of O-Acetylserine Sulfhydrylase with bound Transcription Factor peptide inhibitor from Planctomyces limnophilus</Hit_def>
+  <Hit_accession>5XOQ_A</Hit_accession>
+  <Hit_len>310</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.409</Hsp_bit-score>
-      <Hsp_score>54</Hsp_score>
-      <Hsp_evalue>4.00887</Hsp_evalue>
-      <Hsp_query-from>18</Hsp_query-from>
-      <Hsp_query-to>54</Hsp_query-to>
-      <Hsp_hit-from>21</Hsp_hit-from>
-      <Hsp_hit-to>57</Hsp_hit-to>
+      <Hsp_bit-score>370.548</Hsp_bit-score>
+      <Hsp_score>950</Hsp_score>
+      <Hsp_evalue>9.24168e-129</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>309</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>12</Hsp_identity>
-      <Hsp_positive>19</Hsp_positive>
-      <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>37</Hsp_align-len>
-      <Hsp_qseq>AVEELRTQVRELRSIIETMKDQQKREIKQLLSELDEE</Hsp_qseq>
-      <Hsp_hseq>ASHELRTPLTTIRGFAELYRQGAARDVGMLLSRIESE</Hsp_hseq>
-      <Hsp_midline>A  ELRT +  +R   E  +    R++  LLS ++ E</Hsp_midline>
+      <Hsp_identity>200</Hsp_identity>
+      <Hsp_positive>241</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADL</Hsp_qseq>
+      <Hsp_hseq>IFKDNSESIGRTPLVQINRLTAGLSSRVLAKIEGRNPAYSVXCRIGAAMIWDAEQSGKLKPGMHVVEPTSGNTGIALAFVCAARGYKLTLTMPETMSIERRMMLKSFGADLVLTPGADGMKGAISKAEELAAQ--PGWFIPQQFKNPANPAIHVKTTGPEIWNDTEGQVDVFVAGVGTGGTITGVARFLKHEK-KHPVHVVAVEPAASPVLAGGPAGR------HKIQGIGAGFVPDTFDRSVVDEILSVTDDEAIETARKLAMEEGISCGISCGAAMAGALKVAARPEFAGKTIVTVLPDAGERYLSTALFENL</Hsp_hseq>
+      <Hsp_midline>IF+DNS +IG TPLV++NR+  G   R+LAK+E RNP++SV CRIGA MIWDAE+ G LKPG+ +VEPTSGNTGIALA+V AARGYKLTLTMPETMSIERR +LK+ GA+LVLT GA GMKGAI KAEE+ A     + + QQF NPANP IH KTTGPEIW DT+GQVDVF+AGVGTGGT+TGV+R++K  K K  +  VAVEP  SPV+A   AG       HKIQGIGAGF+P   D  +VD+++ +T++EAI TAR+L  EEGI  GIS GAA+A ALK+     F  K IV +LP +GERYLSTALF +L</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>15</Hit_num>
-  <Hit_id>gi|157834829|pdb|2DZY|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of N392a Mutant Of Yeast Bleomycin Hydrolase</Hit_def>
-  <Hit_accession>2DZY_A</Hit_accession>
-  <Hit_len>457</Hit_len>
+  <Hit_id>gi|377656559|pdb|4AEC|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of The Arabidopsis Thaliana O-Acetyl- Serine-(Thiol)-Lyase C &gt;gi|377656560|pdb|4AEC|B Chain B, Crystal Structure Of The Arabidopsis Thaliana O-Acetyl- Serine-(Thiol)-Lyase C</Hit_def>
+  <Hit_accession>4AEC_A</Hit_accession>
+  <Hit_len>430</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>4.42837</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>193</Hsp_hit-from>
-      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_bit-score>322.783</Hsp_bit-score>
+      <Hsp_score>826</Hsp_score>
+      <Hsp_evalue>3.60797e-108</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>427</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>187</Hsp_identity>
+      <Hsp_positive>237</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>324</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVE-LVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_qseq>
+      <Hsp_hseq>IADNVSQLIGKTPMVYLNSIAKGCVANIAAKLEIMEPCCSVKDRIGYSMVTDAEQKGFISPGKSVLVEPTSGNTGIGLAFIAASRGYRLILTMPASMSMERRVLLKAFGAELVLTDPAKGMTGAVQKAEEILKNTPDAYML-QQFDNPANPKIHYETTGPEIWDDTKGKVDIFVAGIGTGGTITGVGRFIKEKNPKTQVI--GVEPTESDILSGG------KPGPHKIQGIGAGFIPKNLDQKIMDEVIAISSEEAIETAKQLALKEGLMVGISSGAAAAAAIKVAKRPENAGKLIAVVFPSFGERYLSTPLFQSIREEVEKMQ</Hsp_hseq>
+      <Hsp_midline>I ++ S  IG TP+V LN I  G    I AK+E   P  SVK RIG +M+ DAE++G + PG   LVEPTSGNTGI LA++AA+RGY+L LTMP +MS+ERR LLKA GA LVLT+ AKGM GA+QKAEEI+ + P+ Y+L QQF NPANP+IH +TTGPEIW+DT G+VD+F+AG+GTGGT+TGV R+IK    KT +I   VEPT+S +++        KPGPHKIQGIGAGFIP NLD K++D+VI I++EEAI TA++L  +EG++ GISSGAA AAA+K+ +      K I V+ PS GERYLST LF  +  E E  Q</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>16</Hit_num>
-  <Hit_id>gi|157834830|pdb|2DZZ|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of N392v Mutant Of Yeast Bleomycin Hydrolase</Hit_def>
-  <Hit_accession>2DZZ_A</Hit_accession>
-  <Hit_len>457</Hit_len>
+  <Hit_id>gi|332639957|pdb|3RR2|A</Hit_id>
+  <Hit_def>Chain A, Structure Of A Cysteine Synthase (o-acetylserine Sulfhydrylase (oass)) From Mycobacterium Marinum Atcc Baa-535 / M</Hit_def>
+  <Hit_accession>3RR2_A</Hit_accession>
+  <Hit_len>314</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>4.42837</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>193</Hsp_hit-from>
-      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_bit-score>311.997</Hsp_bit-score>
+      <Hsp_score>798</Hsp_score>
+      <Hsp_evalue>1.22633e-105</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>312</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>180</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADL</Hsp_qseq>
+      <Hsp_hseq>IAENITQLIGGTPLVRLRRVTDGAAADVVAKLESFNPAGSIKDRIGVAMIDAAEKAGLIKPDTIILEPTSGNTGIALAMVSAARGYKCVLTMPDTMSIERRMLLRAYGAELVLTPGAEGMAGAIAKAEELAKTD-DRYFIPQQFENPANPAVHAVTTAEEVWRDTDGKVDIFVSGVGTGGTITGVAQVIKQRRPSAQF--VAVEPAASPVLSGG------QKGPHPIQGIGAGFVPPVLDLALVDEVITVGNDDALELARRMATEEGLLVGISSGAAVWAARELAHRPENAGKLIVVVLPDFGERYLSTVLFADL</Hsp_hseq>
+      <Hsp_midline>I E+ +  IG TPLVRL R+ +G    ++AK+ES NP+ S+K RIG  MI  AEK G++KP   ++EPTSGNTGIALA V+AARGYK  LTMP+TMSIERR LL+A GA LVLT GA+GM GAI KAEE+  ++ ++Y + QQF NPANP +H  TT  E+W DTDG+VD+F++GVGTGGT+TGV++ IK  +       VAVEP  SPV++        + GPH IQGIGAGF+P  LDL LVD+VI + N++A+  ARR+  EEG+L GISSGAAV AA +L        K IVV+LP  GERYLST LFADL</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>17</Hit_num>
-  <Hit_id>gi|157834831|pdb|2E01|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of H369a Mutant Of Yeast Bleomycin Hydrolase</Hit_def>
-  <Hit_accession>2E01_A</Hit_accession>
-  <Hit_len>457</Hit_len>
+  <Hit_id>gi|433286878|pdb|4I1Y|A</Hit_id>
+  <Hit_def>Chain A, The structure of Cysteine synthase from Mycobacterium ulcerans Agy99 &gt;gi|433286879|pdb|4I1Y|B Chain B, The structure of Cysteine synthase from Mycobacterium ulcerans Agy99 &gt;gi|433286880|pdb|4I1Y|C Chain C, The structure of Cysteine synthase from Mycobacterium ulcerans Agy99 &gt;gi|433286881|pdb|4I1Y|D Chain D, The structure of Cysteine synthase from Mycobacterium ulcerans Agy99</Hit_def>
+  <Hit_accession>4I1Y_A</Hit_accession>
+  <Hit_len>314</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>4.42837</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>193</Hsp_hit-from>
-      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_bit-score>311.227</Hsp_bit-score>
+      <Hsp_score>796</Hsp_score>
+      <Hsp_evalue>2.35822e-105</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>312</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>180</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADL</Hsp_qseq>
+      <Hsp_hseq>IAENIAQLIGGTPLVRLRRVTDGAAADVVAKLESFNPAGSIKDRIGVAMIDAAEKAGLIKPDTIILEPTSGNTGIALAMVSAARGYKCVLTMPDTMSIERRMLLRAYGAELVLTPGAEGMAGAIAKAEELAKTD-DRYFIPQQFENPANPAVHAVTTAEEVWRDTDGKVDIFVSGVGTGGTITGVAQVIKQRRPSAQF--VAVEPAASPVLSGG------QKGPHPIQGIGAGFVPPVLDLALVDEVITVGNDDALELARRMATEEGLLFGISSGAAVWAARELAHRPENAGKLIVVVLPDFGERYLSTVLFADL</Hsp_hseq>
+      <Hsp_midline>I E+ +  IG TPLVRL R+ +G    ++AK+ES NP+ S+K RIG  MI  AEK G++KP   ++EPTSGNTGIALA V+AARGYK  LTMP+TMSIERR LL+A GA LVLT GA+GM GAI KAEE+  ++ ++Y + QQF NPANP +H  TT  E+W DTDG+VD+F++GVGTGGT+TGV++ IK  +       VAVEP  SPV++        + GPH IQGIGAGF+P  LDL LVD+VI + N++A+  ARR+  EEG+L GISSGAAV AA +L        K IVV+LP  GERYLST LFADL</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>18</Hit_num>
-  <Hit_id>gi|157834832|pdb|2E02|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of H369l Mutant Of Yeast Bleomycin Hydrolase</Hit_def>
-  <Hit_accession>2E02_A</Hit_accession>
-  <Hit_len>457</Hit_len>
+  <Hit_id>gi|529280785|pdb|3ZEI|A</Hit_id>
+  <Hit_def>Chain A, Structure Of The Mycobacterium Tuberculosis O-acetylserine Sulfhydrylase (oass) Cysk1 In Complex With A Small Molecule Inhibitor</Hit_def>
+  <Hit_accession>3ZEI_A</Hit_accession>
+  <Hit_len>310</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>4.42837</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>193</Hsp_hit-from>
-      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_bit-score>309.686</Hsp_bit-score>
+      <Hsp_score>792</Hsp_score>
+      <Hsp_evalue>8.42394e-105</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>179</Hsp_identity>
+      <Hsp_positive>224</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADL</Hsp_qseq>
+      <Hsp_hseq>IAEDITQLIGRTPLVRLRRVTDGAVADIVAKLEFFNPANSVKDRIGVAMLQAAEQAGLIKPDTIILEPTSGNTGIALAMVCAARGYRCVLTMPETMSLERRMLLRAYGAELILTPGADGMSGAIAKAEELAKTD-QRYFVPQQFENPANPAIHRVTTAEEVWRDTDGKVDIVVAGVGTGGTITGVAQVIKERKPSARF--VAVEPAASPVLS---GGQK---GPHPIQGIGAGFVPPVLDQDLVDEIITVGNEDALNVARRLAREEGLLVGISSGAATVAALQVARRPENAGKLIVVVLPDFGERYLSTPLFADV</Hsp_hseq>
+      <Hsp_midline>I ED +  IG TPLVRL R+ +G    I+AK+E  NP+ SVK RIG  M+  AE+ G++KP   ++EPTSGNTGIALA V AARGY+  LTMPETMS+ERR LL+A GA L+LT GA GM GAI KAEE+  ++ ++Y + QQF NPANP IH  TT  E+W DTDG+VD+ +AGVGTGGT+TGV++ IK  K       VAVEP  SPV++    G++   GPH IQGIGAGF+P  LD  LVD++I + NE+A++ ARRL  EEG+L GISSGAA  AAL++        K IVV+LP  GERYLST LFAD+</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>19</Hit_num>
-  <Hit_id>gi|157834833|pdb|2E03|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of Nq67e Mutant Of Yeast Bleomycin Hydrolase</Hit_def>
-  <Hit_accession>2E03_A</Hit_accession>
-  <Hit_len>457</Hit_len>
+  <Hit_id>gi|149243591|pdb|2Q3D|A</Hit_id>
+  <Hit_def>Chain A, 2.2 A Resolution Crystal Structure of O-Acetylserine Sulfhydrylase (OASS) From MYCOBACTERIUM TUBERCULOSIS in Complex with the Reaction Intermediate ALPHA-AMINOACRYLATE</Hit_def>
+  <Hit_accession>2Q3D_A</Hit_accession>
+  <Hit_len>313</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>4.42837</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>193</Hsp_hit-from>
-      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_bit-score>309.686</Hsp_bit-score>
+      <Hsp_score>792</Hsp_score>
+      <Hsp_evalue>1.03763e-104</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>311</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>179</Hsp_identity>
+      <Hsp_positive>224</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADL</Hsp_qseq>
+      <Hsp_hseq>IAEDITQLIGRTPLVRLRRVTDGAVADIVAKLEFFNPANSVKDRIGVAMLQAAEQAGLIKPDTIILEPTSGNTGIALAMVCAARGYRCVLTMPETMSLERRMLLRAYGAELILTPGADGMSGAIAKAEELAKTD-QRYFVPQQFENPANPAIHRVTTAEEVWRDTDGKVDIVVAGVGTGGTITGVAQVIKERKPSARF--VAVEPAASPVLS---GGQK---GPHPIQGIGAGFVPPVLDQDLVDEIITVGNEDALNVARRLAREEGLLVGISSGAATVAALQVARRPENAGKLIVVVLPDFGERYLSTPLFADV</Hsp_hseq>
+      <Hsp_midline>I ED +  IG TPLVRL R+ +G    I+AK+E  NP+ SVK RIG  M+  AE+ G++KP   ++EPTSGNTGIALA V AARGY+  LTMPETMS+ERR LL+A GA L+LT GA GM GAI KAEE+  ++ ++Y + QQF NPANP IH  TT  E+W DTDG+VD+ +AGVGTGGT+TGV++ IK  K       VAVEP  SPV++    G++   GPH IQGIGAGF+P  LD  LVD++I + NE+A++ ARRL  EEG+L GISSGAA  AAL++        K IVV+LP  GERYLST LFAD+</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>20</Hit_num>
-  <Hit_id>gi|160285458|pdb|2E00|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of N392l Mutant Of Yeast Bleomycin Hydrolase</Hit_def>
-  <Hit_accession>2E00_A</Hit_accession>
-  <Hit_len>457</Hit_len>
+  <Hit_id>gi|645985726|pdb|4LMA|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Analysis Of O-acetylserine Sulfhydrylase Cysk1 From Microcystis Aeruginosa 7806 &gt;gi|645985727|pdb|4LMA|B Chain B, Crystal Structure Analysis Of O-acetylserine Sulfhydrylase Cysk1 From Microcystis Aeruginosa 7806</Hit_def>
+  <Hit_accession>4LMA_A</Hit_accession>
+  <Hit_len>326</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>4.42837</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>193</Hsp_hit-from>
-      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_bit-score>308.916</Hsp_bit-score>
+      <Hsp_score>790</Hsp_score>
+      <Hsp_evalue>2.71729e-104</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>323</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>185</Hsp_identity>
+      <Hsp_positive>230</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>325</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGN-----GRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVE-LVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKEL</Hsp_qseq>
+      <Hsp_hseq>RIAHDVTELVGRTPLVQLNRIPQAEGCLGRIVMKLEGMNPAASVKDRIGTHMINSAEKAGLINPETTVLVEPTSGNTGIALAMTAAAKGYRLILTMPETMSLERRAMLKAYGATLELTPGSQGMKGAILRAQQIVDSIPGAY-MLQQFRNPSNPEIHRLTTAEEIWQDTEGQVDFIVAGVGTGGTITGVAEVIKSRKPSFQV--VAVEPFNSPVISGG------NPGPHKIQGIGAGFIPEVLRTDLIDEVITVSDEEAFQFGRRLAKEEGLLSGISSGANLCAAIQLAQRPENEGKLIVVIQPSFGERYLSTLMFQNI-EEREL</Hsp_hseq>
+      <Hsp_midline>+I  D +  +G TPLV+LNRI       GRI+ K+E  NP+ SVK RIG +MI  AEK G++ P    LVEPTSGNTGIALA  AAA+GY+L LTMPETMS+ERR +LKA GA L LT G++GMKGAI +A++IV S P  Y +LQQF NP+NPEIH  TT  EIW+DT+GQVD  +AGVGTGGT+TGV+  IK  K    +  VAVEP +SPVI+         PGPHKIQGIGAGFIP  L   L+D+VI +++EEA    RRL +EEG+L+GISSGA + AA++L +      K IVVI PS GERYLST +F ++  E+EL</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>21</Hit_num>
-  <Hit_id>gi|157831161|pdb|1GCB|A</Hit_id>
-  <Hit_def>Chain A, Gal6, Yeast Bleomycin Hydrolase Dna-Binding Protease (Thiol)</Hit_def>
-  <Hit_accession>1GCB_A</Hit_accession>
-  <Hit_len>454</Hit_len>
+  <Hit_id>gi|149243586|pdb|2Q3B|A</Hit_id>
+  <Hit_def>Chain A, 1.8 A Resolution Crystal Structure Of O-Acetylserine Sulfhydrylase (Oass) Holoenzyme From Mycobacterium Tuberculosis &gt;gi|149243589|pdb|2Q3C|A Chain A, 2.1 A Resolution Crystal Structure Of O-acetylserine Sulfhydrylase (oass) Holoenzyme From Mycobacterium Tuberculosis In Complex With The Inhibitory Peptide Dfsi</Hit_def>
+  <Hit_accession>2Q3B_A</Hit_accession>
+  <Hit_len>313</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>26.1794</Hsp_bit-score>
-      <Hsp_score>56</Hsp_score>
-      <Hsp_evalue>4.83761</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>189</Hsp_hit-from>
-      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_bit-score>307.375</Hsp_bit-score>
+      <Hsp_score>786</Hsp_score>
+      <Hsp_evalue>7.45736e-104</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>311</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>178</Hsp_identity>
+      <Hsp_positive>223</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADL</Hsp_qseq>
+      <Hsp_hseq>IAEDITQLIGRTPLVRLRRVTDGAVADIVAKLEFFNPANSVXDRIGVAMLQAAEQAGLIKPDTIILEPTSGNTGIALAMVCAARGYRCVLTMPETMSLERRMLLRAYGAELILTPGADGMSGAIAKAEELAKTD-QRYFVPQQFENPANPAIHRVTTAEEVWRDTDGKVDIVVAGVGTGGTITGVAQVIKERKPSARF--VAVEPAASPVLS---GGQK---GPHPIQGIGAGFVPPVLDQDLVDEIITVGNEDALNVARRLAREEGLLVGISSGAATVAALQVARRPENAGKLIVVVLPDFGERYLSTPLFADV</Hsp_hseq>
+      <Hsp_midline>I ED +  IG TPLVRL R+ +G    I+AK+E  NP+ SV  RIG  M+  AE+ G++KP   ++EPTSGNTGIALA V AARGY+  LTMPETMS+ERR LL+A GA L+LT GA GM GAI KAEE+  ++ ++Y + QQF NPANP IH  TT  E+W DTDG+VD+ +AGVGTGGT+TGV++ IK  K       VAVEP  SPV++    G++   GPH IQGIGAGF+P  LD  LVD++I + NE+A++ ARRL  EEG+L GISSGAA  AAL++        K IVV+LP  GERYLST LFAD+</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>22</Hit_num>
-  <Hit_id>gi|254221093|pdb|3HNW|A</Hit_id>
-  <Hit_def>Chain A, Crystal Structure Of A Basic Coiled-coil Protein Of Unknown Function From Eubacterium Eligens Atcc 27750 &gt;gi|254221094|pdb|3HNW|B Chain B, Crystal Structure Of A Basic Coiled-coil Protein Of Unknown Function From Eubacterium Eligens Atcc 27750</Hit_def>
-  <Hit_accession>3HNW_A</Hit_accession>
-  <Hit_len>138</Hit_len>
+  <Hit_id>gi|645985729|pdb|4LMB|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Analysis Of O-acetylserine Sulfhydrylase Cysk2 Complexed With Cystine From Microcystis Aeruginosa 7806</Hit_def>
+  <Hit_accession>4LMB_A</Hit_accession>
+  <Hit_len>322</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.7942</Hsp_bit-score>
-      <Hsp_score>55</Hsp_score>
-      <Hsp_evalue>5.50443</Hsp_evalue>
-      <Hsp_query-from>42</Hsp_query-from>
-      <Hsp_query-to>70</Hsp_query-to>
-      <Hsp_hit-from>110</Hsp_hit-from>
-      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_bit-score>301.982</Hsp_bit-score>
+      <Hsp_score>772</Hsp_score>
+      <Hsp_evalue>1.3784e-101</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>318</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>13</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>29</Hsp_align-len>
-      <Hsp_qseq>REIKQLLSELDEEKKIRLRLQMEVNDIKK</Hsp_qseq>
-      <Hsp_hseq>KEIKELKSEINKYQKNIVKLETELNDSKK</Hsp_hseq>
-      <Hsp_midline>+EIK+L SE+++ +K  ++L+ E+ND KK</Hsp_midline>
+      <Hsp_identity>179</Hsp_identity>
+      <Hsp_positive>230</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>318</Hsp_align-len>
+      <Hsp_qseq>IFEDNSLTIGHTPLVRLNRIG-----NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPG-VELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADL</Hsp_qseq>
+      <Hsp_hseq>IARDITQLVGRTPLVQLNRIPVAEGVKARIVVKLESMNPAASVKDRIGVSMVEDAEAAGLIHPDKTILVEPTSGNTGIALAMVAAAKGYRLVLTMPETMSLERRAMLKAYGAQLELTPGSQGMEGAITRAEEIVENTPNAY-SLQQFRNPANPKIHRETTAEEIWADTDGLVDIVIGGVGTGGTITGIAETIKPRRPQ--FQAIAVEPSNSPVLSGG------QPGPHKIQGIGAGFIPAIFRPELIDEVIIVDDTEAFAYARRLARQEGLLSGISAGAALWAAIQVGKRPENEDKLIVMIQPSFGERYLSTALFKDL</Hsp_hseq>
+      <Hsp_midline>I  D +  +G TPLV+LNRI        RI+ K+ES NP+ SVK RIG +M+ DAE  G++ P    LVEPTSGNTGIALA VAAA+GY+L LTMPETMS+ERR +LKA GA L LT G++GM+GAI +AEEIV + P  Y  LQQF NPANP+IH +TT  EIW DTDG VD+ I GVGTGGT+TG++  IK  + +    ++AVEP++SPV++        +PGPHKIQGIGAGFIPA    +L+D+VI + + EA + ARRL  +EG+L+GIS+GAA+ AA+++ +     +K IV+I PS GERYLSTALF DL</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>23</Hit_num>
-  <Hit_id>gi|1486941898|pdb|6BXJ|A</Hit_id>
-  <Hit_def>Chain A, Structure of a single-chain beta3 integrin</Hit_def>
-  <Hit_accession>6BXJ_A</Hit_accession>
-  <Hit_len>625</Hit_len>
+  <Hit_id>gi|134104574|pdb|2ISQ|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-Acetylserine Sulfhydrylase From Arabidopsis Thaliana In Complex With C-Terminal Peptide From Arabidopsis Serine Acetyltransferase</Hit_def>
+  <Hit_accession>2ISQ_A</Hit_accession>
+  <Hit_len>320</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.7942</Hsp_bit-score>
-      <Hsp_score>55</Hsp_score>
-      <Hsp_evalue>6.11695</Hsp_evalue>
-      <Hsp_query-from>43</Hsp_query-from>
-      <Hsp_query-to>72</Hsp_query-to>
-      <Hsp_hit-from>276</Hsp_hit-from>
-      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_bit-score>296.204</Hsp_bit-score>
+      <Hsp_score>757</Hsp_score>
+      <Hsp_evalue>2.67845e-99</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>12</Hsp_identity>
-      <Hsp_positive>22</Hsp_positive>
-      <Hsp_gaps>2</Hsp_gaps>
-      <Hsp_align-len>30</Hsp_align-len>
-      <Hsp_qseq>EIKQLLSELDEEKKIRLRLQMEVNDIKKAL</Hsp_qseq>
-      <Hsp_hseq>KLKDLFTEL--QKKIRSKVELEVRDLPEEL</Hsp_hseq>
-      <Hsp_midline>++K L +EL  +KKIR ++++EV D+ + L</Hsp_midline>
+      <Hsp_identity>172</Hsp_identity>
+      <Hsp_positive>224</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVE-LVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>RIAKDVTELIGNTPLVYLNNVAEGCVGRVAAKLEMMEPCSSVKDRIGFSMISDAEKKGLIKPGESVLIEPTSGNTGVGLAFTAAAKGYKLIITMPASMSTERRIILLAFGVELVLTDPAKGMKGAIAKAEEILAKTPNGYML-QQFENPANPKIHYETTGPEIWKGTGGKIDGFVSGIGTGGTITGAGKYLKEQNANVKL--YGVEPVESAILSGG------KPGPHKIQGIGAGFIPSVLNVDLIDEVVQVSSDESIDMARQLALKEGLLVGISSGAAAAAAIKLAQRPENAGKLFVAIFPSFGERYLSTVLF</Hsp_hseq>
+      <Hsp_midline>+I +D +  IG+TPLV LN +  G   R+ AK+E   P  SVK RIG +MI DAEK+G++KPG   L+EPTSGNTG+ LA+ AAA+GYKL +TMP +MS ERR +L A G  LVLT+ AKGMKGAI KAEEI+A  P  Y+L QQF NPANP+IH +TTGPEIW+ T G++D F++G+GTGGT+TG  +Y+K       L    VEP +S +++        KPGPHKIQGIGAGFIP+ L++ L+D+V+ ++++E+I  AR+L  +EG+L GISSGAA AAA+KL +      K  V I PS GERYLST LF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>24</Hit_num>
-  <Hit_id>gi|14488506|pdb|1HSJ|A</Hit_id>
-  <Hit_def>Chain A, SARR MBP FUSION STRUCTURE &gt;gi|14488507|pdb|1HSJ|B Chain B, SARR MBP FUSION STRUCTURE</Hit_def>
-  <Hit_accession>1HSJ_A</Hit_accession>
-  <Hit_len>487</Hit_len>
+  <Hit_id>gi|78101043|pdb|1Z7W|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-Acetylserine Sulfhydrylase From Arabidopsis Thaliana</Hit_def>
+  <Hit_accession>1Z7W_A</Hit_accession>
+  <Hit_len>322</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.7942</Hsp_bit-score>
-      <Hsp_score>55</Hsp_score>
-      <Hsp_evalue>6.21837</Hsp_evalue>
-      <Hsp_query-from>26</Hsp_query-from>
-      <Hsp_query-to>53</Hsp_query-to>
-      <Hsp_hit-from>456</Hsp_hit-from>
-      <Hsp_hit-to>483</Hsp_hit-to>
+      <Hsp_bit-score>295.819</Hsp_bit-score>
+      <Hsp_score>756</Hsp_score>
+      <Hsp_evalue>3.47747e-99</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>11</Hsp_identity>
-      <Hsp_positive>21</Hsp_positive>
-      <Hsp_gaps>0</Hsp_gaps>
-      <Hsp_align-len>28</Hsp_align-len>
-      <Hsp_qseq>VRELRSIIETMKDQQKREIKQLLSELDE</Hsp_qseq>
-      <Hsp_hseq>LQDERTVIVYVTDTQKANIQKLISELEE</Hsp_hseq>
-      <Hsp_midline>+++ R++I  + D QK  I++L+SEL+E</Hsp_midline>
+      <Hsp_identity>172</Hsp_identity>
+      <Hsp_positive>224</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVE-LVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>RIAKDVTELIGNTPLVYLNNVAEGCVGRVAAKLEMMEPCSSVKDRIGFSMISDAEKKGLIKPGESVLIEPTSGNTGVGLAFTAAAKGYKLIITMPASMSTERRIILLAFGVELVLTDPAKGMKGAIAKAEEILAKTPNGYML-QQFENPANPKIHYETTGPEIWKGTGGKIDGFVSGIGTGGTITGAGKYLKEQNANVKL--YGVEPVESAILSGG------KPGPHKIQGIGAGFIPSVLNVDLIDEVVQVSSDESIDMARQLALKEGLLVGISSGAAAAAAIKLAQRPENAGKLFVAIFPSFGERYLSTVLF</Hsp_hseq>
+      <Hsp_midline>+I +D +  IG+TPLV LN +  G   R+ AK+E   P  SVK RIG +MI DAEK+G++KPG   L+EPTSGNTG+ LA+ AAA+GYKL +TMP +MS ERR +L A G  LVLT+ AKGMKGAI KAEEI+A  P  Y+L QQF NPANP+IH +TTGPEIW+ T G++D F++G+GTGGT+TG  +Y+K       L    VEP +S +++        KPGPHKIQGIGAGFIP+ L++ L+D+V+ ++++E+I  AR+L  +EG+L GISSGAA AAA+KL +      K  V I PS GERYLST LF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>25</Hit_num>
-  <Hit_id>gi|659835399|pdb|4OCH|A</Hit_id>
-  <Hit_def>Chain A, Apo structure of Smr domain of MutS2 from Deinococcus radiodurans &gt;gi|659835400|pdb|4OD6|A Chain A, Structure of Smr domain of MutS2 from Deinococcus radiodurans, Mn2+ soaked</Hit_def>
-  <Hit_accession>4OCH_A</Hit_accession>
-  <Hit_len>90</Hit_len>
+  <Hit_id>gi|78101044|pdb|1Z7Y|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of The Arabidopsis Thaliana O-Acetylserine Sulfhydrylase K46a Mutant</Hit_def>
+  <Hit_accession>1Z7Y_A</Hit_accession>
+  <Hit_len>322</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.0238</Hsp_bit-score>
-      <Hsp_score>53</Hsp_score>
-      <Hsp_evalue>6.24564</Hsp_evalue>
-      <Hsp_query-from>1</Hsp_query-from>
-      <Hsp_query-to>35</Hsp_query-to>
-      <Hsp_hit-from>1</Hsp_hit-from>
-      <Hsp_hit-to>41</Hsp_hit-to>
+      <Hsp_bit-score>293.893</Hsp_bit-score>
+      <Hsp_score>751</Hsp_score>
+      <Hsp_evalue>2.02774e-98</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>16</Hsp_identity>
-      <Hsp_positive>20</Hsp_positive>
-      <Hsp_gaps>6</Hsp_gaps>
-      <Hsp_align-len>41</Hsp_align-len>
-      <Hsp_qseq>GHMEGKPKMEP------AASSQAAVEELRTQVRELRSIIET</Hsp_qseq>
-      <Hsp_hseq>GHMGSAPSRFDNELQLRGLSVEAAVEELRAAIAEARALKET</Hsp_hseq>
-      <Hsp_midline>GHM   P            S +AAVEELR  + E R++ ET</Hsp_midline>
+      <Hsp_identity>171</Hsp_identity>
+      <Hsp_positive>223</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVE-LVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>RIAKDVTELIGNTPLVYLNNVAEGCVGRVAAKLEMMEPCSSVADRIGFSMISDAEKKGLIKPGESVLIEPTSGNTGVGLAFTAAAKGYKLIITMPASMSTERRIILLAFGVELVLTDPAKGMKGAIAKAEEILAKTPNGYML-QQFENPANPKIHYETTGPEIWKGTGGKIDGFVSGIGTGGTITGAGKYLKEQNANVKL--YGVEPVESAILSGG------KPGPHKIQGIGAGFIPSVLNVDLIDEVVQVSSDESIDMARQLALKEGLLVGISSGAAAAAAIKLAQRPENAGKLFVAIFPSFGERYLSTVLF</Hsp_hseq>
+      <Hsp_midline>+I +D +  IG+TPLV LN +  G   R+ AK+E   P  SV  RIG +MI DAEK+G++KPG   L+EPTSGNTG+ LA+ AAA+GYKL +TMP +MS ERR +L A G  LVLT+ AKGMKGAI KAEEI+A  P  Y+L QQF NPANP+IH +TTGPEIW+ T G++D F++G+GTGGT+TG  +Y+K       L    VEP +S +++        KPGPHKIQGIGAGFIP+ L++ L+D+V+ ++++E+I  AR+L  +EG+L GISSGAA AAA+KL +      K  V I PS GERYLST LF</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>26</Hit_num>
-  <Hit_id>gi|157836811|pdb|3GCB|A</Hit_id>
-  <Hit_def>Chain A, Gal6 (Yeast Bleomycin Hydrolase) Mutant C73aDELTAK454</Hit_def>
-  <Hit_accession>3GCB_A</Hit_accession>
-  <Hit_len>470</Hit_len>
+  <Hit_id>gi|34810049|pdb|1O58|A</Hit_id>
+  <Hit_def>Chain A, Crystal structure of O-acetylserine sulfhydrylase (TM0665) from Thermotoga maritima at 1.80 A resolution &gt;gi|34810050|pdb|1O58|B Chain B, Crystal structure of O-acetylserine sulfhydrylase (TM0665) from Thermotoga maritima at 1.80 A resolution &gt;gi|34810051|pdb|1O58|C Chain C, Crystal structure of O-acetylserine sulfhydrylase (TM0665) from Thermotoga maritima at 1.80 A resolution &gt;gi|34810052|pdb|1O58|D Chain D, Crystal structure of O-acetylserine sulfhydrylase (TM0665) from Thermotoga maritima at 1.80 A resolution</Hit_def>
+  <Hit_accession>1O58_A</Hit_accession>
+  <Hit_len>303</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.7942</Hsp_bit-score>
-      <Hsp_score>55</Hsp_score>
-      <Hsp_evalue>6.45472</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>206</Hsp_hit-from>
-      <Hsp_hit-to>238</Hsp_hit-to>
+      <Hsp_bit-score>280.026</Hsp_bit-score>
+      <Hsp_score>715</Hsp_score>
+      <Hsp_evalue>3.70011e-93</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>308</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>301</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>160</Hsp_identity>
+      <Hsp_positive>200</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>IGHTPLVRLNRIGNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLS</Hsp_qseq>
+      <Hsp_hseq>IGSTPIVRLDSI-DSRIFLKLEKNNPGGSVKDRPALFMILDAEKRGLLKNGI--VEPTSGNMGIAIAMIGAKRGHRVILTMPETMSVERRKVLKMLGAELVLTPGELGMKGAVEKALEI--SRETGAHMLNQFENPYNVYSHQFTTGPEILKQMDYQIDAFVAGVGTGGTISGVGRVLKGFFGNGVKI-VAVEPAKSPVLSGG------QPGKHAIQGIGAGFVPKILDRSVIDEVITVEDEEAYEMARYLAKKEGLLVGISSGANVAAALKVAQKLG-PDARVVTVAPDHAERYLS</Hsp_hseq>
+      <Hsp_midline>IG TP+VRL+ I + RI  K+E  NP  SVK R    MI DAEKRG+LK G+  VEPTSGN GIA+A + A RG+++ LTMPETMS+ERRK+LK LGA LVLT G  GMKGA++KA EI  S      +L QF NP N   H+ TTGPEI +  D Q+D F+AGVGTGGT++GV R +KG  G    I VAVEP  SPV++        +PG H IQGIGAGF+P  LD  ++D+VI + +EEA   AR L ++EG+L GISSGA VAAALK+ +     +  +V + P   ERYLS</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>27</Hit_num>
-  <Hit_id>gi|157829714|pdb|1A6R|A</Hit_id>
-  <Hit_def>Chain A, Gal6 (Yeast Bleomycin Hydrolase) Mutant C73a</Hit_def>
-  <Hit_accession>1A6R_A</Hit_accession>
-  <Hit_len>471</Hit_len>
+  <Hit_id>gi|223674043|pdb|3FCA|A</Hit_id>
+  <Hit_def>Chain A, Genetic Incorporation of a Metal-ion Chelating Amino Acid into proteins as biophysical probe &gt;gi|223674044|pdb|3FCA|B Chain B, Genetic Incorporation of a Metal-ion Chelating Amino Acid into proteins as biophysical probe</Hit_def>
+  <Hit_accession>3FCA_A</Hit_accession>
+  <Hit_len>291</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.7942</Hsp_bit-score>
-      <Hsp_score>55</Hsp_score>
-      <Hsp_evalue>6.58426</Hsp_evalue>
-      <Hsp_query-from>20</Hsp_query-from>
-      <Hsp_query-to>49</Hsp_query-to>
-      <Hsp_hit-from>206</Hsp_hit-from>
-      <Hsp_hit-to>238</Hsp_hit-to>
+      <Hsp_bit-score>278.87</Hsp_bit-score>
+      <Hsp_score>712</Hsp_score>
+      <Hsp_evalue>6.8864e-93</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>308</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>289</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>15</Hsp_identity>
-      <Hsp_positive>23</Hsp_positive>
-      <Hsp_gaps>3</Hsp_gaps>
-      <Hsp_align-len>33</Hsp_align-len>
-      <Hsp_qseq>EELRTQVRELR---SIIETMKDQQKREIKQLLS</Hsp_qseq>
-      <Hsp_hseq>ETLRTALKERSADDSIIVTLREQMQREIFRLMS</Hsp_hseq>
-      <Hsp_midline>E LRT ++E     SII T+++Q +REI +L+S</Hsp_midline>
+      <Hsp_identity>160</Hsp_identity>
+      <Hsp_positive>200</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>IGHTPLVRLNRIGNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLS</Hsp_qseq>
+      <Hsp_hseq>IGSTPIVRLDSI-DSRIXLKLEKNNPGGSVKDRPALFMILDAEKRGLLKNGI--VEPTSGNMGIAIAMIGAKRGHRVILTMPETMSVERRKVLKMLGAELVLTPGELGMKGAVEKALEI--SRETGAHMLNQFENPYNVYSHQFTTGPEILKQMDYQIDAFVAGVGTGGTISGVGRVLKGFFGNGVKI-VAVEPAKSPVLSGG------QPGKHAIQGIGAGFVPKILDRSVIDEVITVEDEEAYEMARYLAKKEGLLVGISSGANVAAALKVAQKLG-PDARVVTVAPDHAERYLS</Hsp_hseq>
+      <Hsp_midline>IG TP+VRL+ I + RI  K+E  NP  SVK R    MI DAEKRG+LK G+  VEPTSGN GIA+A + A RG+++ LTMPETMS+ERRK+LK LGA LVLT G  GMKGA++KA EI  S      +L QF NP N   H+ TTGPEI +  D Q+D F+AGVGTGGT++GV R +KG  G    I VAVEP  SPV++        +PG H IQGIGAGF+P  LD  ++D+VI + +EEA   AR L ++EG+L GISSGA VAAALK+ +     +  +V + P   ERYLS</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>
 <Hit>
   <Hit_num>28</Hit_num>
-  <Hit_id>gi|162329961|pdb|2PK9|A</Hit_id>
-  <Hit_def>Chain A, Structure Of The Pho85-pho80 Cdk-cyclin Complex Of The Phosphate-responsive Signal Transduction Pathway &gt;gi|162329963|pdb|2PK9|C Chain C, Structure Of The Pho85-pho80 Cdk-cyclin Complex Of The Phosphate-responsive Signal Transduction Pathway &gt;gi|162329965|pdb|2PMI|A Chain A, Structure Of The Pho85-Pho80 Cdk-Cyclin Complex Of The Phosphate- Responsive Signal Transduction Pathway With Bound Atp-Gamma-S &gt;gi|162329967|pdb|2PMI|C Chain C, Structure Of The Pho85-Pho80 Cdk-Cyclin Complex Of The Phosphate- Responsive Signal Transduction Pathway With Bound Atp-Gamma-S &gt;gi|544192098|pdb|4KRC|A Chain A, Crystal Structure Of Pho85-pcl10-atp-gamma-s Complex &gt;gi|544192100|pdb|4KRD|A Chain A, Crystal Structure Of Pho85-pcl10 Complex</Hit_def>
-  <Hit_accession>2PK9_A</Hit_accession>
-  <Hit_len>317</Hit_len>
+  <Hit_id>gi|171849007|pdb|3BM5|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-Acetyl-Serine Sulfhydrylase From Entamoeba Histolytica In Complex With Cysteine &gt;gi|313507292|pdb|3BM5|B Chain B, Crystal Structure Of O-Acetyl-Serine Sulfhydrylase From Entamoeba Histolytica In Complex With Cysteine</Hit_def>
+  <Hit_accession>3BM5_A</Hit_accession>
+  <Hit_len>338</Hit_len>
   <Hit_hsps>
     <Hsp>
       <Hsp_num>1</Hsp_num>
-      <Hsp_bit-score>25.409</Hsp_bit-score>
-      <Hsp_score>54</Hsp_score>
-      <Hsp_evalue>8.33573</Hsp_evalue>
-      <Hsp_query-from>24</Hsp_query-from>
-      <Hsp_query-to>75</Hsp_query-to>
-      <Hsp_hit-from>49</Hsp_hit-from>
-      <Hsp_hit-to>96</Hsp_hit-to>
+      <Hsp_bit-score>266.929</Hsp_bit-score>
+      <Hsp_score>681</Hsp_score>
+      <Hsp_evalue>1.60357e-87</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>318</Hsp_hit-to>
       <Hsp_query-frame>0</Hsp_query-frame>
       <Hsp_hit-frame>0</Hsp_hit-frame>
-      <Hsp_identity>16</Hsp_identity>
-      <Hsp_positive>26</Hsp_positive>
-      <Hsp_gaps>4</Hsp_gaps>
-      <Hsp_align-len>52</Hsp_align-len>
-      <Hsp_qseq>TQVRELRSIIETMKDQQKREIKQLLSELDEEKKIRLRLQMEVNDIKKALQSK</Hsp_qseq>
-      <Hsp_hseq>TAIRE----ISLMKELKHENIVRLYDVIHTENKLTLVFEFMDNDLKKYMDSR</Hsp_hseq>
-      <Hsp_midline>T +RE    I  MK+ +   I +L   +  E K+ L  +   ND+KK + S+</Hsp_midline>
+      <Hsp_identity>151</Hsp_identity>
+      <Hsp_positive>203</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>317</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLN------RIGNG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>RIYHNILETIGGTPLVELHGVTEHPRIKKGTRILVKLEYFNPMSSVKDRVGFNIVYQAIKDGRLKPGMEIIESTSGNTGIALCQAGAVFGYRVNIAMPSTMSVERQMIMKAFGAELILTEGKKGMPGAIEEVNKMIKENPGKYFVANQFGNPDNTAAHHYTAN-EIWEDTDGEVDIVVSAVGTSGTVIGVAE--KLKEKKKGIKIIAVEPEESAVL------EGKAKGPHGIQGIGAGFIPDIYKKEFVDEIIPIKTQDAWKMARAVVKYDGIMCGMSSGAAILAGLKEAEKPENEGKTIVIIVPSCGERYLSTDLY</Hsp_hseq>
+      <Hsp_midline>+I+ +   TIG TPLV L+      RI  G RIL K+E  NP  SVK R+G N+++ A K G LKPG+E++E TSGNTGIAL    A  GY++ + MP TMS+ER+ ++KA GA L+LTEG KGM GAI++  +++  NP KY +  QF NP N   H  T   EIWEDTDG+VD+ ++ VGT GT+ GV+   K  + K  +  +AVEP +S V+      E    GPH IQGIGAGFIP     + VD++I I  ++A   AR +++ +GI+ G+SSGAA+ A LK  E      K IV+I+PS GERYLST L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|404312797|pdb|3VBE|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of Beta-Cyanoalanine Synthase In Soybean &gt;gi|404312798|pdb|3VBE|B Chain B, Crystal Structure Of Beta-Cyanoalanine Synthase In Soybean &gt;gi|404312799|pdb|3VBE|C Chain C, Crystal Structure Of Beta-Cyanoalanine Synthase In Soybean &gt;gi|404312800|pdb|3VBE|D Chain D, Crystal Structure Of Beta-Cyanoalanine Synthase In Soybean</Hit_def>
+  <Hit_accession>3VBE_A</Hit_accession>
+  <Hit_len>344</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>266.929</Hsp_bit-score>
+      <Hsp_score>681</Hsp_score>
+      <Hsp_evalue>1.65981e-87</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>212</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>319</Hsp_align-len>
+      <Hsp_qseq>SLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPG-VELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_qseq>
+      <Hsp_hseq>SQLIGRTPLVYLNKVTEGCGAYVAVKQEMMQPTASIKDRPAYAMITDAEEKNLITPGKTTLIEPTSGNMGISMAFMAAMKGYKMVLTMPSYTSLERRVTMRAFGAELILTDPAKGMGGTVKKAYELLENTPNAHML-QQFSNPANTQVHFETTGPEIWEDTNGQVDIFVMGIGSGGTVSGVGQYLKSKNPNVKIY--GVEPSESNVLNGG------KPGPHHITGNGVGFKPDILDLDVMEKVLEVSSEDAVNMARVLALKEGLMVGISSGANTVAALRLAQLPENKGKLIVTVHPSFGERYLSSVLFQELRQEAENMQ</Hsp_hseq>
+      <Hsp_midline>S  IG TPLV LN++  G    +  K E   P+ S+K R    MI DAE++ ++ PG   L+EPTSGN GI++A++AA +GYK+ LTMP   S+ERR  ++A GA L+LT+ AKGM G ++KA E++ + P  ++L QQFSNPAN ++H +TTGPEIWEDT+GQVD+F+ G+G+GGT++GV +Y+K       +    VEP++S V+         KPGPH I G G GF P  LDL +++KV+ +++E+A++ AR L  +EG++ GISSGA   AAL+L +      K IV + PS GERYLS+ LF +L  E E  Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|183448072|pdb|2PQM|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of Cysteine Synthase (Oass) From Entamoeba Histolytica At 1.86 A Resolution &gt;gi|183448073|pdb|2PQM|B Chain B, Crystal Structure Of Cysteine Synthase (Oass) From Entamoeba Histolytica At 1.86 A Resolution</Hit_def>
+  <Hit_accession>2PQM_A</Hit_accession>
+  <Hit_len>343</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>266.929</Hsp_bit-score>
+      <Hsp_score>681</Hsp_score>
+      <Hsp_evalue>1.83289e-87</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>151</Hsp_identity>
+      <Hsp_positive>203</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>317</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLN------RIGNG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>RIYHNILETIGGTPLVELHGVTEHPRIKKGTRILVKLEYFNPMSSVKDRVGFNIVYQAIKDGRLKPGMEIIESTSGNTGIALCQAGAVFGYRVNIAMPSTMSVERQMIMKAFGAELILTEGKKGMPGAIEEVNKMIKENPGKYFVANQFGNPDNTAAHHYTAN-EIWEDTDGEVDIVVSAVGTSGTVIGVAE--KLKEKKKGIKIIAVEPEESAVL------EGKAKGPHGIQGIGAGFIPDIYKKEFVDEIIPIKTQDAWKMARAVVKYDGIMCGMSSGAAILAGLKEAEKPENEGKTIVIIVPSCGERYLSTDLY</Hsp_hseq>
+      <Hsp_midline>+I+ +   TIG TPLV L+      RI  G RIL K+E  NP  SVK R+G N+++ A K G LKPG+E++E TSGNTGIAL    A  GY++ + MP TMS+ER+ ++KA GA L+LTEG KGM GAI++  +++  NP KY +  QF NP N   H  T   EIWEDTDG+VD+ ++ VGT GT+ GV+   K  + K  +  +AVEP +S V+      E    GPH IQGIGAGFIP     + VD++I I  ++A   AR +++ +GI+ G+SSGAA+ A LK  E      K IV+I+PS GERYLST L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|563320760|pdb|4IL5|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-acetyl Serine Sulfhydrylase From Entamoeba Histolytica In Complex With Isoleucine &gt;gi|563320761|pdb|4IL5|B Chain B, Crystal Structure Of O-acetyl Serine Sulfhydrylase From Entamoeba Histolytica In Complex With Isoleucine</Hit_def>
+  <Hit_accession>4IL5_A</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>265.003</Hsp_bit-score>
+      <Hsp_score>676</Hsp_score>
+      <Hsp_evalue>8.63309e-87</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>317</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLN------RIGNG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>RIYHNILETIGGTPLVELHGVTEHPRIKKGTRILVKLEYFNPMSSVXDRVGFNIVYQAIKDGRLKPGMEIIESTSGNTGIALCQAGAVFGYRVNIAMPSTMSVERQMIMKAFGAELILTEGKKGMPGAIEEVNKMIKENPGKYFVANQFGNPDNTAAHHYTAN-EIWEDTDGEVDIVVSAVGTSGTVIGVAE--KLKEKKKGIKIIAVEPEESAVL------EGKAKGPHGIQGIGAGFIPDIYKKEFVDEIIPIKTQDAWKMARAVVKYDGIMCGMSSGAAILAGLKEAEKPENEGKTIVIIVPSCGERYLSTDLY</Hsp_hseq>
+      <Hsp_midline>+I+ +   TIG TPLV L+      RI  G RIL K+E  NP  SV  R+G N+++ A K G LKPG+E++E TSGNTGIAL    A  GY++ + MP TMS+ER+ ++KA GA L+LTEG KGM GAI++  +++  NP KY +  QF NP N   H  T   EIWEDTDG+VD+ ++ VGT GT+ GV+   K  + K  +  +AVEP +S V+      E    GPH IQGIGAGFIP     + VD++I I  ++A   AR +++ +GI+ G+SSGAA+ A LK  E      K IV+I+PS GERYLST L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|563320769|pdb|4JBN|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-acetyl Serine Sulfhydrylase From Entamoeba Histolytica In Complex With Serine Acetyl Transferase Derived Tetrapeptide, Spsi &gt;gi|563320771|pdb|4JBN|B Chain B, Crystal Structure Of O-acetyl Serine Sulfhydrylase From Entamoeba Histolytica In Complex With Serine Acetyl Transferase Derived Tetrapeptide, Spsi</Hit_def>
+  <Hit_accession>4JBN_A</Hit_accession>
+  <Hit_len>338</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>264.618</Hsp_bit-score>
+      <Hsp_score>675</Hsp_score>
+      <Hsp_evalue>9.81903e-87</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>317</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLN------RIGNG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>RIYHNILETIGGTPLVELHGVTEHPRIKKGTRILVKLEYFNPMSSVXDRVGFNIVYQAIKDGRLKPGMEIIESTSGNTGIALCQAGAVFGYRVNIAMPSTMSVERQMIMKAFGAELILTEGKKGMPGAIEEVNKMIKENPGKYFVANQFGNPDNTAAHHYTAN-EIWEDTDGEVDIVVSAVGTSGTVIGVAE--KLKEKKKGIKIIAVEPEESAVL------EGKAKGPHGIQGIGAGFIPDIYKKEFVDEIIPIKTQDAWKMARAVVKYDGIMCGMSSGAAILAGLKEAEKPENEGKTIVIIVPSCGERYLSTDLY</Hsp_hseq>
+      <Hsp_midline>+I+ +   TIG TPLV L+      RI  G RIL K+E  NP  SV  R+G N+++ A K G LKPG+E++E TSGNTGIAL    A  GY++ + MP TMS+ER+ ++KA GA L+LTEG KGM GAI++  +++  NP KY +  QF NP N   H  T   EIWEDTDG+VD+ ++ VGT GT+ GV+   K  + K  +  +AVEP +S V+      E    GPH IQGIGAGFIP     + VD++I I  ++A   AR +++ +GI+ G+SSGAA+ A LK  E      K IV+I+PS GERYLST L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|563320767|pdb|4JBL|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-acetyl Serine Sulfhydrylase From Entamoeba Histolytica In Complex With Methionine &gt;gi|563320768|pdb|4JBL|B Chain B, Crystal Structure Of O-acetyl Serine Sulfhydrylase From Entamoeba Histolytica In Complex With Methionine</Hit_def>
+  <Hit_accession>4JBL_A</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>264.618</Hsp_bit-score>
+      <Hsp_score>675</Hsp_score>
+      <Hsp_evalue>1.179e-86</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>317</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLN------RIGNG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>RIYHNILETIGGTPLVELHGVTEHPRIKKGTRILVKLEYFNPMSSVXDRVGFNIVYQAIKDGRLKPGMEIIESTSGNTGIALCQAGAVFGYRVNIAMPSTMSVERQMIMKAFGAELILTEGKKGMPGAIEEVNKMIKENPGKYFVANQFGNPDNTAAHHYTAN-EIWEDTDGEVDIVVSAVGTSGTVIGVAE--KLKEKKKGIKIIAVEPEESAVL------EGKAKGPHGIQGIGAGFIPDIYKKEFVDEIIPIKTQDAWKMARAVVKYDGIMCGMSSGAAILAGLKEAEKPENEGKTIVIIVPSCGERYLSTDLY</Hsp_hseq>
+      <Hsp_midline>+I+ +   TIG TPLV L+      RI  G RIL K+E  NP  SV  R+G N+++ A K G LKPG+E++E TSGNTGIAL    A  GY++ + MP TMS+ER+ ++KA GA L+LTEG KGM GAI++  +++  NP KY +  QF NP N   H  T   EIWEDTDG+VD+ ++ VGT GT+ GV+   K  + K  +  +AVEP +S V+      E    GPH IQGIGAGFIP     + VD++I I  ++A   AR +++ +GI+ G+SSGAA+ A LK  E      K IV+I+PS GERYLST L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|404312801|pdb|3VC3|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of Beta-Cyanoalanine Synthase K95a Mutant In Soybean &gt;gi|404312802|pdb|3VC3|B Chain B, Crystal Structure Of Beta-Cyanoalanine Synthase K95a Mutant In Soybean &gt;gi|404312803|pdb|3VC3|C Chain C, Crystal Structure Of Beta-Cyanoalanine Synthase K95a Mutant In Soybean &gt;gi|404312804|pdb|3VC3|D Chain D, Crystal Structure Of Beta-Cyanoalanine Synthase K95a Mutant In Soybean &gt;gi|404312805|pdb|3VC3|E Chain E, Crystal Structure Of Beta-Cyanoalanine Synthase K95a Mutant In Soybean &gt;gi|404312806|pdb|3VC3|F Chain F, Crystal Structure Of Beta-Cyanoalanine Synthase K95a Mutant In Soybean</Hit_def>
+  <Hit_accession>3VC3_A</Hit_accession>
+  <Hit_len>344</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>264.618</Hsp_bit-score>
+      <Hsp_score>675</Hsp_score>
+      <Hsp_evalue>1.27574e-86</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>149</Hsp_identity>
+      <Hsp_positive>211</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>319</Hsp_align-len>
+      <Hsp_qseq>SLTIGHTPLVRLNRIGNG---RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPG-VELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTEKELQQ</Hsp_qseq>
+      <Hsp_hseq>SQLIGRTPLVYLNKVTEGCGAYVAVKQEMMQPTASIADRPAYAMITDAEEKNLITPGKTTLIEPTSGNMGISMAFMAAMKGYKMVLTMPSYTSLERRVTMRAFGAELILTDPAKGMGGTVKKAYELLENTPNAHML-QQFSNPANTQVHFETTGPEIWEDTNGQVDIFVMGIGSGGTVSGVGQYLKSKNPNVKIY--GVEPSESNVLNGG------KPGPHHITGNGVGFKPDILDLDVMEKVLEVSSEDAVNMARVLALKEGLMVGISSGANTVAALRLAQLPENKGKLIVTVHPSFGERYLSSVLFQELRQEAENMQ</Hsp_hseq>
+      <Hsp_midline>S  IG TPLV LN++  G    +  K E   P+ S+  R    MI DAE++ ++ PG   L+EPTSGN GI++A++AA +GYK+ LTMP   S+ERR  ++A GA L+LT+ AKGM G ++KA E++ + P  ++L QQFSNPAN ++H +TTGPEIWEDT+GQVD+F+ G+G+GGT++GV +Y+K       +    VEP++S V+         KPGPH I G G GF P  LDL +++KV+ +++E+A++ AR L  +EG++ GISSGA   AAL+L +      K IV + PS GERYLS+ LF +L  E E  Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gi|158428332|pdb|2EGU|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-Acetylserine Sulfhydrase From Geobacillus Kaustophilus Hta426</Hit_def>
+  <Hit_accession>2EGU_A</Hit_accession>
+  <Hit_len>308</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>263.077</Hsp_bit-score>
+      <Hsp_score>671</Hsp_score>
+      <Hsp_evalue>1.76872e-86</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>304</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>174</Hsp_identity>
+      <Hsp_positive>212</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>NSLT--IGHTPLVRLNRI---GNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>NSITELIGDTPAVKLNRIVDEDSADVYLKLEFMNPGSSVKDRIALAMIEAAEKAGKLKPGDTIVEPTSGNTGIGLAMVAAAKGYKAVLVMPDTMSLERRNLLRAYGAELVLTPGAQGMRGAIAKAEELVREH--GYFMPQQFKNEANPEIHRLTTGKEIVEQMGDQLDAFVAGVGTGGTITGAGKVLR--EAYPNIKIYAVEPADSPVLSGG------KPGPHKIQGIGAGFVPDILDTSIYDGVITVTTEEAFAAARRAAREEGILGGISSGAAIHAALKVAK-ELGKGKKVLAIIPSNGERYLSTPLY</Hsp_hseq>
+      <Hsp_midline>NS+T  IG TP V+LNRI    +  +  K+E  NP  SVK RI   MI  AEK G LKPG  +VEPTSGNTGI LA VAAA+GYK  L MP+TMS+ERR LL+A GA LVLT GA+GM+GAI KAEE+V  +   Y + QQF N ANPEIH  TTG EI E    Q+D F+AGVGTGGT+TG  + ++  +   ++   AVEP DSPV++        KPGPHKIQGIGAGF+P  LD  + D VI +T EEA + ARR   EEGIL GISSGAA+ AALK+ + E    K ++ I+PS+GERYLST L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gi|399124856|pdb|3T4P|A</Hit_id>
+  <Hit_def>Chain A, Crystal structure of O-Acetyl Serine Sulfhydrylase from Leishmania donovani in complex with designed tetrapeptide &gt;gi|399124923|pdb|3TBH|A Chain A, O-acetyl serine sulfhydrylase &gt;gi|400260999|pdb|3SPX|A Chain A, Crystal structure of O-Acetyl Serine Sulfhydrylase from Leishmania donovani</Hit_def>
+  <Hit_accession>3T4P_A</Hit_accession>
+  <Hit_len>334</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.922</Hsp_bit-score>
+      <Hsp_score>668</Hsp_score>
+      <Hsp_evalue>9.53729e-86</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>318</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>155</Hsp_identity>
+      <Hsp_positive>206</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IGHTPLVRLNRIGN--GRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELV-EPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTE</Hsp_qseq>
+      <Hsp_hseq>IGQTPALYLNKLNNTKAKVVLKMECENPMASVXDRLGFAIYDKAEKEGKLIPGKSIVVESSSGNTGVSLAHLGAIRGYKVIITMPESMSLERRCLLRIFGAEVILTPAALGMKGAVAMAKKIVAANPNA-VLADQFATKYNALIHEETTGPEIWEQTNHNVDCFIAGVGTGGTLTGVARALKKMGSHARI--VAVEPTESPVLSGG------KPGPHKIQGIGPGFVPDVLDRSLIDEVLCVAGDDAIETALKLTRSDGVFCGFSGGANVYAALKIAERPEMEGKTIVTVIPSFGERYLSTTLYRSVRDE</Hsp_hseq>
+      <Hsp_midline>IG TP + LN++ N   +++ K+E  NP  SV  R+G  +   AEK G L PG  +V E +SGNTG++LA++ A RGYK+ +TMPE+MS+ERR LL+  GA ++LT  A GMKGA+  A++IVA+NP   +L  QF+   N  IHE+TTGPEIWE T+  VD FIAGVGTGGTLTGV+R +K       +  VAVEPT+SPV++        KPGPHKIQGIG GF+P  LD  L+D+V+ +  ++AI TA +L   +G+  G S GA V AALK+ E      K IV ++PS GERYLST L+  +  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gi|378792614|pdb|4AIR|A</Hit_id>
+  <Hit_def>Chain A, Leishmania Major Cysteine Synthase &gt;gi|378792615|pdb|4AIR|B Chain B, Leishmania Major Cysteine Synthase</Hit_def>
+  <Hit_accession>4AIR_A</Hit_accession>
+  <Hit_len>354</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>258.84</Hsp_bit-score>
+      <Hsp_score>660</Hsp_score>
+      <Hsp_evalue>3.91563e-84</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>318</Hsp_query-to>
+      <Hsp_hit-from>40</Hsp_hit-from>
+      <Hsp_hit-to>340</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>155</Hsp_identity>
+      <Hsp_positive>204</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>IGHTPLVRLNRIGN--GRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELV-EPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLFTE</Hsp_qseq>
+      <Hsp_hseq>IGQTPALYLNKLNNTKAKVVLKMECENPMASVKDRLGFAIYDKAEKEGKLIPGKSVVVESSSGNTGVSLAHLGAIRGYKVIITMPESMSLERRCLLRIFGAEVILTPAALGMKGAVTMAKKIVTANPNA-VLADQFATKYNALIHEETTGPEIWEQTNHNVDCFIAGVGTGGTLTGVARALKKMGSHARI--VAVEPMESPVLSGG------KPGAHKIQGIGPGFVPDVLDRSLIDEVFCVAGDDAIETALKLTRSDGVFCGFSGGANVYAALKIAERPEMEGKTIVTIIPSFGERYLSTALYRSVRDE</Hsp_hseq>
+      <Hsp_midline>IG TP + LN++ N   +++ K+E  NP  SVK R+G  +   AEK G L PG  +V E +SGNTG++LA++ A RGYK+ +TMPE+MS+ERR LL+  GA ++LT  A GMKGA+  A++IV +NP   +L  QF+   N  IHE+TTGPEIWE T+  VD FIAGVGTGGTLTGV+R +K       +  VAVEP +SPV++        KPG HKIQGIG GF+P  LD  L+D+V  +  ++AI TA +L   +G+  G S GA V AALK+ E      K IV I+PS GERYLSTAL+  +  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gi|66360289|pdb|1VE1|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of T.Th. Hb8 O-Acetylserine Sulfhydrylase &gt;gi|168176988|pdb|2ECO|A Chain A, Crystal Structure Of T.Th. Hb8 O-Acetylserine Sulfhydrylase Complexed With 4-Methylvalerate &gt;gi|168176989|pdb|2ECQ|A Chain A, Crystal Structure Of T.Th. Hb8 O-Acetylserine Sulfhydrylase Complexed With 3-Hydroxylactate &gt;gi|168988627|pdb|2EFY|A Chain A, Crystal Structure Of T.Th. Hb8 O-Acetylserine Sulfhydrylase Complexed With 4-Acetylbutyric Acid &gt;gi|168988628|pdb|2EFY|B Chain B, Crystal Structure Of T.Th. Hb8 O-Acetylserine Sulfhydrylase Complexed With 4-Acetylbutyric Acid</Hit_def>
+  <Hit_accession>1VE1_A</Hit_accession>
+  <Hit_len>304</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>222.631</Hsp_bit-score>
+      <Hsp_score>566</Hsp_score>
+      <Hsp_evalue>8.61725e-71</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>147</Hsp_identity>
+      <Hsp_positive>193</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>313</Hsp_align-len>
+      <Hsp_qseq>TIGHTPLVRLNRI---GNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVE--LVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKA----EEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFAD</Hsp_qseq>
+      <Hsp_hseq>AIGKTPVVRLAKVVEPDMAEVWVKLEGLNPGGSIKDRPAWYMIKDAEERGILRPGSGQVIVEPTSGNTGIGLAMIAASRGYRLILTMPAQMSEERKRVLKAFGAELVLTDPERRMLAAREEALRLKEELGAFMPD------QFKNPANVRAHYETTGPELYEALEGRIDAFVYGSGTGGTITGVGRYLKERIPHVKVI--AVEPARSNVLSGG------KMGQHGFQGMGPGFIPENLDLSLLDGVIQVWEEDAFPLARRLAREEGLFLGMSSGGIVWAALQVAR-ELGPGKRVACISPDGGWKYLSTPLYAE</Hsp_hseq>
+      <Hsp_midline> IG TP+VRL ++       +  K+E  NP  S+K R    MI DAE+RG+L+PG    +VEPTSGNTGI LA +AA+RGY+L LTMP  MS ER+++LKA GA LVLT+  + M  A ++A    EE+ A  P+      QF NPAN   H +TTGPE++E  +G++D F+ G GTGGT+TGV RY+K       +I  AVEP  S V++        K G H  QG+G GFIP NLDL L+D VI +  E+A   ARRL  EEG+  G+SSG  V AAL++   E    K +  I P  G +YLST L+A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gi|126031114|pdb|2JC3|A</Hit_id>
+  <Hit_def>Chain A, Structure Of O-acetylserine Sulfhydrylase B From Salmonella Typhimurium &gt;gi|126031115|pdb|2JC3|B Chain B, Structure Of O-acetylserine Sulfhydrylase B From Salmonella Typhimurium &gt;gi|126031116|pdb|2JC3|C Chain C, Structure Of O-acetylserine Sulfhydrylase B From Salmonella Typhimurium &gt;gi|126031117|pdb|2JC3|D Chain D, Structure Of O-acetylserine Sulfhydrylase B From Salmonella Typhimurium &gt;gi|126031118|pdb|2JC3|E Chain E, Structure Of O-acetylserine Sulfhydrylase B From Salmonella Typhimurium &gt;gi|126031119|pdb|2JC3|F Chain F, Structure Of O-acetylserine Sulfhydrylase B From Salmonella Typhimurium &gt;gi|126031120|pdb|2JC3|G Chain G, Structure Of O-acetylserine Sulfhydrylase B From Salmonella Typhimurium &gt;gi|126031121|pdb|2JC3|H Chain H, Structure Of O-acetylserine Sulfhydrylase B From Salmonella Typhimurium</Hit_def>
+  <Hit_accession>2JC3_A</Hit_accession>
+  <Hit_len>303</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>218.394</Hsp_bit-score>
+      <Hsp_score>555</Hsp_score>
+      <Hsp_evalue>4.27589e-69</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>294</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>186</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>TIGHTPLVRLNRIG--NG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFAD</Hsp_qseq>
+      <Hsp_hseq>TIGNTPLVKLQRIGPDNGSEIWVKLEGNNPAGSVKDRAALSMIVEAEKRGEIKPGDVLIEATSGNTGIALAMIAALKGYRMKLLMPDNMSQERRAAMRAYGAELILVTKEQGMEGARDLA--LAMSERGEGKLLDQFNNPDNPYAHYTTTGPEIWRQTSGRITHFVSSMGTTGTITGVSRFLR--EQEKPVTIVGLQPEEGSSI----------PG---IRRWPAEYMPGIFNASLVDEVLDIHQNDAENTMRELAVREGIFCGVSSGGAVAGALRVA--RATPGAIVVAIICDRGDRYLSTGVFGE</Hsp_hseq>
+      <Hsp_midline>TIG+TPLV+L RIG  NG  I  K+E  NP+ SVK R   +MI +AEKRG +KPG  L+E TSGNTGIALA +AA +GY++ L MP+ MS ERR  ++A GA L+L    +GM+GA   A  +  S   +  LL QF+NP NP  H  TTGPEIW  T G++  F++ +GT GT+TGVSR+++  + +  +  V ++P +   I          PG   I+   A ++P   +  LVD+V+ I   +A +T R L   EGI  G+SSG AVA AL++    +     +V I+   G+RYLST +F +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gi|71042633|pdb|2BHS|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of Cysteine Synthase B &gt;gi|71042634|pdb|2BHS|B Chain B, Crystal Structure Of Cysteine Synthase B &gt;gi|71042635|pdb|2BHS|C Chain C, Crystal Structure Of Cysteine Synthase B &gt;gi|71042636|pdb|2BHS|D Chain D, Crystal Structure Of Cysteine Synthase B</Hit_def>
+  <Hit_accession>2BHS_A</Hit_accession>
+  <Hit_len>303</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>218.394</Hsp_bit-score>
+      <Hsp_score>555</Hsp_score>
+      <Hsp_evalue>4.51326e-69</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>294</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>131</Hsp_identity>
+      <Hsp_positive>189</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>TIGHTPLVRLNRIG--NG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFAD</Hsp_qseq>
+      <Hsp_hseq>TIGNTPLVKLQRMGPDNGSEVWLKLEGNNPAGSVKDRAALSMIVEAEKRGEIKPGDVLIEATSGNTGIALAMIAALKGYRMKLLMPDNMSQERRAAMRAYGAELILVTKEQGMEGARDLALEM--ANRGEGKLLDQFNNPDNPYAHYTTTGPEIWQQTGGRITHFVSSMGTTGTITGVSRFMR--EQSKPVTIVGLQPEEGSSI----------PG---IRRWPTEYLPGIFNASLVDEVLDIHQRDAENTMRELAVREGIFCGVSSGGAVAGALRVA--KANPDAVVVAIICDRGDRYLSTGVFGE</Hsp_hseq>
+      <Hsp_midline>TIG+TPLV+L R+G  NG  +  K+E  NP+ SVK R   +MI +AEKRG +KPG  L+E TSGNTGIALA +AA +GY++ L MP+ MS ERR  ++A GA L+L    +GM+GA   A E+  +N  +  LL QF+NP NP  H  TTGPEIW+ T G++  F++ +GT GT+TGVSR+++  +    +  V ++P +   I          PG   I+     ++P   +  LVD+V+ I   +A +T R L   EGI  G+SSG AVA AL++   ++  +  +V I+   G+RYLST +F +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gi|951273146|pdb|2V03|A</Hit_id>
+  <Hit_def>Chain A, High resolution structure and catalysis of an O-acetylserine sulfhydrylase</Hit_def>
+  <Hit_accession>2V03_A</Hit_accession>
+  <Hit_len>303</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>217.624</Hsp_bit-score>
+      <Hsp_score>553</Hsp_score>
+      <Hsp_evalue>9.01159e-69</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>294</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>131</Hsp_identity>
+      <Hsp_positive>188</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>TIGHTPLVRLNRIG--NG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFAD</Hsp_qseq>
+      <Hsp_hseq>TIGNTPLVKLQRMGPDNGSEVWLKLEGNNPAGSVKDRAALSMIVEAEKRGEIKPGDVLIEATSGNTGIALAMIAALKGYRMKLLMPDNMSQERRAAMRAYGAELILVTKEQGMEGARDLALEM--ANRGEGKLLDQFNNPDNPYAHYTTTGPEIWQQTGGRITHFVSSMGTTGTITGVSRFMR--EQSKPVTIVGLQPEEGSSI----------PG---IRRWPTEYLPGIFNASLVDEVLDIHQRDAENTMRELAVREGIFCGVSSGGAVAGALRVA--AANPDAVVVAIICDRGDRYLSTGVFGE</Hsp_hseq>
+      <Hsp_midline>TIG+TPLV+L R+G  NG  +  K+E  NP+ SVK R   +MI +AEKRG +KPG  L+E TSGNTGIALA +AA +GY++ L MP+ MS ERR  ++A GA L+L    +GM+GA   A E+  +N  +  LL QF+NP NP  H  TTGPEIW+ T G++  F++ +GT GT+TGVSR+++  +    +  V ++P +   I          PG   I+     ++P   +  LVD+V+ I   +A +T R L   EGI  G+SSG AVA AL++    +  +  +V I+   G+RYLST +F +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gi|1227483806|pdb|5XW3|A</Hit_id>
+  <Hit_def>Chain A, Crystal structure of cystathionine beta-synthase from Bacillus anthracis &gt;gi|1227483807|pdb|5XW3|B Chain B, Crystal structure of cystathionine beta-synthase from Bacillus anthracis</Hit_def>
+  <Hit_accession>5XW3_A</Hit_accession>
+  <Hit_len>315</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>217.624</Hsp_bit-score>
+      <Hsp_score>553</Hsp_score>
+      <Hsp_evalue>1.34324e-68</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>127</Hsp_identity>
+      <Hsp_positive>183</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>304</Hsp_align-len>
+      <Hsp_qseq>IGHTPLVRLNRIG---NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>IGHTPIVEITRFSLPEGVRLFAKLEFYNPGGSVKDRLGRELIEDALEKGLVTEGGTIIEPTAGNTGIGLALAALQHDLRVIVCVPEKFSIEKQELMKALGATVVHTPTEQGMTGAIAKAKELVNEIPNSY-SPSQFANEANPRAYFKTLGPELWSALNGEINIFVAGAGTGGTFMGTASYLK--EKNIDIKTVIVEPEGS-----ILNGG--KAGSHETEGIGLEFIPPFLKTSYFDEIHTISDRNAFLRVKELAQKEGLLVGSSSGAAFHASL-LEAEKAAPGTNIVTIFPDSSERYLSKDIY</Hsp_hseq>
+      <Hsp_midline>IGHTP+V + R       R+ AK+E  NP  SVK R+G  +I DA ++G++  G  ++EPT+GNTGI LA  A     ++ + +PE  SIE+++L+KALGA +V T   +GM GAI KA+E+V   P  Y    QF+N ANP  + KT GPE+W   +G++++F+AG GTGGT  G + Y+K  +   D+ +V VEP  S      L G   K G H+ +GIG  FIP  L     D++  I++  A    + L ++EG+L G SSGAA  A+L L+ +++    NIV I P S ERYLS  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gi|951273135|pdb|2BHT|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-acetylserine Sulfhydrylase B &gt;gi|951273136|pdb|2BHT|B Chain B, Crystal Structure Of O-acetylserine Sulfhydrylase B &gt;gi|951273137|pdb|2BHT|C Chain C, Crystal Structure Of O-acetylserine Sulfhydrylase B &gt;gi|951273138|pdb|2BHT|D Chain D, Crystal Structure Of O-acetylserine Sulfhydrylase B</Hit_def>
+  <Hit_accession>2BHT_A</Hit_accession>
+  <Hit_len>303</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>216.853</Hsp_bit-score>
+      <Hsp_score>551</Hsp_score>
+      <Hsp_evalue>1.7231e-68</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>294</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>189</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>TIGHTPLVRLNRIG--NG-RILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFAD</Hsp_qseq>
+      <Hsp_hseq>TIGNTPLVKLQRMGPDNGSEVWLKLEGNNPAGSVKDRAALSMIVEAEKRGRIKPGDVLIEATSGNTGIALAMIAALKGYRMKLLMPDNMSQERRAAMRAYGAELILVTKEQGMEGARDLALEM--ANRGEGKLLDQFNNPDNPKAHYTTTGPEIWQQTGGRITHFVSSMGTTGTITGVSEFMR--EQSKPVTIVGLQPEEGSSI----------PG---IRRWPTEYLPGIFNASLVDEVLDIHQRDAENTMRELAVREGIFCGVSSGGAVAGALRVA--KANPDAVVVAIICDRGDRYLSTGVFGE</Hsp_hseq>
+      <Hsp_midline>TIG+TPLV+L R+G  NG  +  K+E  NP+ SVK R   +MI +AEKRG +KPG  L+E TSGNTGIALA +AA +GY++ L MP+ MS ERR  ++A GA L+L    +GM+GA   A E+  +N  +  LL QF+NP NP+ H  TTGPEIW+ T G++  F++ +GT GT+TGVS +++  +    +  V ++P +   I          PG   I+     ++P   +  LVD+V+ I   +A +T R L   EGI  G+SSG AVA AL++   ++  +  +V I+   G+RYLST +F +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gi|1377047917|pdb|5XEM|A</Hit_id>
+  <Hit_def>Chain A, Crystal structure of a hydrogen sulfide-producing enzyme (Fn1220) from Fusobacterium nucleatum in complex with L-lanthionine-PLP Schiff base &gt;gi|1377047918|pdb|5XEM|B Chain B, Crystal structure of a hydrogen sulfide-producing enzyme (Fn1220) from Fusobacterium nucleatum in complex with L-lanthionine-PLP Schiff base &gt;gi|1377047919|pdb|5XEN|A Chain A, Crystal structure of a hydrogen sulfide-producing enzyme (Fn1220) from Fusobacterium nucleatum in complex with L-serine-PLP Schiff base &gt;gi|1377047920|pdb|5XEN|B Chain B, Crystal structure of a hydrogen sulfide-producing enzyme (Fn1220) from Fusobacterium nucleatum in complex with L-serine-PLP Schiff base &gt;gi|1377047921|pdb|5XEO|A Chain A, Crystal structure of a hydrogen sulfide-producing enzyme (Fn1220) from Fusobacterium nucleatum &gt;gi|1377047922|pdb|5XEO|B Chain B, Crystal structure of a hydrogen sulfide-producing enzyme (Fn1220) from Fusobacterium nucleatum</Hit_def>
+  <Hit_accession>5XEM_A</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.305</Hsp_bit-score>
+      <Hsp_score>534</Hsp_score>
+      <Hsp_evalue>7.85215e-66</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>309</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>186</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>303</Hsp_align-len>
+      <Hsp_qseq>IGHTPLVRLNRI---GNGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGA--GFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLST</Hsp_qseq>
+      <Hsp_hseq>IGNTPLVKINNIDTFGN-EIYVKLEGSNPGRSTKDRIALKMIEEAEKEGLIDKDTVIIEATSGNTGIGLAMICAVKNYKLKIVMPDTMSIERIQLMRAYGTEVILTDGSLGMKACLEKLEEL-KKNEKKYFVPNQFTNVNNPKAHYETTAEEILKDLNNKVDVFICGTGTGGSFSGTAKKLK--EKLPNIKTFPVEPASSPLLSKGYI------GPHKIQGMGMSIGGIPAVYDGSLADDILVCEDDDAFEMMRELSFKEGILGGISTGATFKAALDYSKENADKGLKIVVLSTDSGEKYLSN</Hsp_hseq>
+      <Hsp_midline>IG+TPLV++N I   GN  I  K+E  NP  S K RI   MI +AEK G++     ++E TSGNTGI LA + A + YKL + MP+TMSIER +L++A G  ++LT+G+ GMK  ++K EE+   N +KY +  QF+N  NP+ H +TT  EI +D + +VDVFI G GTGG+ +G ++ +K  +   ++ +  VEP  SP++++         GPHKIQG+G   G IPA  D  L D ++   +++A    R L  +EGIL GIS+GA   AAL   ++ +     IVV+   SGE+YLS </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gi|906848732|pdb|3X43|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-ureido-l-serine Synthase &gt;gi|906848733|pdb|3X43|B Chain B, Crystal Structure Of O-ureido-l-serine Synthase &gt;gi|906848734|pdb|3X43|C Chain C, Crystal Structure Of O-ureido-l-serine Synthase &gt;gi|906848735|pdb|3X43|D Chain D, Crystal Structure Of O-ureido-l-serine Synthase &gt;gi|906848736|pdb|3X43|E Chain E, Crystal Structure Of O-ureido-l-serine Synthase &gt;gi|906848737|pdb|3X43|F Chain F, Crystal Structure Of O-ureido-l-serine Synthase &gt;gi|906848738|pdb|3X43|G Chain G, Crystal Structure Of O-ureido-l-serine Synthase &gt;gi|906848739|pdb|3X43|H Chain H, Crystal Structure Of O-ureido-l-serine Synthase</Hit_def>
+  <Hit_accession>3X43_A</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>209.534</Hsp_bit-score>
+      <Hsp_score>532</Hsp_score>
+      <Hsp_evalue>2.53741e-65</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>140</Hsp_identity>
+      <Hsp_positive>192</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>TIGHTPLVRLNRIG--NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKY--LLLQQFSNPANPEIHEKTTGPEIWEDTDG-QVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>TIGRTPIVRLQRMAPEHTSVYVKVESFNPGGSVKDRLALSVVLDAEAKGLLKPGDTIVECTSGNVGIALAMVAAARGYRFVAVMGDTYSVERRKLIRAYGGKLVLFPGHLGSKGGNLIADELA----EKYGWFRARQFDNPANPSYHRETTASEILADFAGKRLDHFVTGFGTTGTLTGVGQMLR--VARPEVRVVALEPSNAAMLAR---GEW---SPHQIQGLAPNFVPGVLDRSVIDDLVTMDEVTARDTSRRLAAEEGIFAGISAGATVATALSIAE-HAPEGTVLLAMLPDTGERYLSTFLF</Hsp_hseq>
+      <Hsp_midline>TIG TP+VRL R+   +  +  KVES NP  SVK R+  +++ DAE +G+LKPG  +VE TSGN GIALA VAAARGY+    M +T S+ERRKL++A G  LVL  G  G KG    A+E+     EKY     +QF NPANP  H +TT  EI  D  G ++D F+ G GT GTLTGV + ++    + ++  VA+EP+++ ++A+   GE     PH+IQG+   F+P  LD  ++D ++ +    A  T+RRL  EEGI AGIS+GA VA AL + E  +     ++ +LP +GERYLST LF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gi|906848740|pdb|3X44|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of O-ureido-l-serine-bound K43a Mutant Of O-ureido- L-serine Synthase &gt;gi|906848741|pdb|3X44|B Chain B, Crystal Structure Of O-ureido-l-serine-bound K43a Mutant Of O-ureido- L-serine Synthase</Hit_def>
+  <Hit_accession>3X44_A</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>207.608</Hsp_bit-score>
+      <Hsp_score>527</Hsp_score>
+      <Hsp_evalue>1.87934e-64</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>139</Hsp_identity>
+      <Hsp_positive>191</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>TIGHTPLVRLNRIG--NGRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLTEGAKGMKGAIQKAEEIVASNPEKY--LLLQQFSNPANPEIHEKTTGPEIWEDTDG-QVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALF</Hsp_qseq>
+      <Hsp_hseq>TIGRTPIVRLQRMAPEHTSVYVKVESFNPGGSVADRLALSVVLDAEAKGLLKPGDTIVECTSGNVGIALAMVAAARGYRFVAVMGDTYSVERRKLIRAYGGKLVLFPGHLGSKGGNLIADELA----EKYGWFRARQFDNPANPSYHRETTASEILADFAGKRLDHFVTGFGTTGTLTGVGQMLR--VARPEVRVVALEPSNAAMLAR---GEW---SPHQIQGLAPNFVPGVLDRSVIDDLVTMDEVTARDTSRRLAAEEGIFAGISAGATVATALSIAE-HAPEGTVLLAMLPDTGERYLSTFLF</Hsp_hseq>
+      <Hsp_midline>TIG TP+VRL R+   +  +  KVES NP  SV  R+  +++ DAE +G+LKPG  +VE TSGN GIALA VAAARGY+    M +T S+ERRKL++A G  LVL  G  G KG    A+E+     EKY     +QF NPANP  H +TT  EI  D  G ++D F+ G GT GTLTGV + ++    + ++  VA+EP+++ ++A+   GE     PH+IQG+   F+P  LD  ++D ++ +    A  T+RRL  EEGI AGIS+GA VA AL + E  +     ++ +LP +GERYLST LF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gi|23200446|pdb|1M54|A</Hit_id>
+  <Hit_def>Chain A, Cystathionine-Beta Synthase: Reduced Vicinal Thiols &gt;gi|23200447|pdb|1M54|B Chain B, Cystathionine-Beta Synthase: Reduced Vicinal Thiols &gt;gi|23200448|pdb|1M54|C Chain C, Cystathionine-Beta Synthase: Reduced Vicinal Thiols &gt;gi|23200449|pdb|1M54|D Chain D, Cystathionine-Beta Synthase: Reduced Vicinal Thiols &gt;gi|23200450|pdb|1M54|E Chain E, Cystathionine-Beta Synthase: Reduced Vicinal Thiols &gt;gi|23200451|pdb|1M54|F Chain F, Cystathionine-Beta Synthase: Reduced Vicinal Thiols</Hit_def>
+  <Hit_accession>1M54_A</Hit_accession>
+  <Hit_len>363</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>202.216</Hsp_bit-score>
+      <Hsp_score>513</Hsp_score>
+      <Hsp_evalue>4.82822e-62</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>311</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>343</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>132</Hsp_identity>
+      <Hsp_positive>184</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>323</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGN-----GRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLT---------EGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTAL</Hsp_qseq>
+      <Hsp_hseq>KILPDILKKIGDTPMVRINKIGKKFGLKCELLAKCEFFNAGGSVKDRISLRMIEDAERDGTLKPGDTIIEPTSGNTGIGLALAAAVRGYRCIIVMPEKMSSEKVDVLRALGAEIVRTPTNARFDSPESHVGV--AWRLKNEIPNSH-----ILDQYRNASNPLAHYDTTADEILQQCDGKLDMLVASVGTGGTITGIARKLKEKCPGCRII--GVDPEGS-ILAEPEELNQTEQTTYEVEGIGYDFIPTVLDRTVVDKWFKSNDEEAFTFARMLIAQEGLLCGGSAGSTVAVAVKAAQ-ELQEGQRCVVILPDSVRNYMTKFL</Hsp_hseq>
+      <Hsp_midline>KI  D    IG TP+VR+N+IG        +LAK E  N   SVK RI   MI DAE+ G LKPG  ++EPTSGNTGI LA  AA RGY+  + MPE MS E+  +L+ALGA +V T         E   G+  A +   EI  S+     +L Q+ N +NP  H  TT  EI +  DG++D+ +A VGTGGT+TG++R +K       +I   V+P  S ++A+     + +   ++++GIG  FIP  LD  +VDK     +EEA + AR L+ +EG+L G S+G+ VA A+K  + E    +  VVILP S   Y++  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gi|1189450349|pdb|5MMS|A</Hit_id>
+  <Hit_def>Chain A, Human Cystathionine Beta-synthase (cbs) P.p49l Delta409-551 Variant &gt;gi|1189450350|pdb|5MMS|B Chain B, Human Cystathionine Beta-synthase (cbs) P.p49l Delta409-551 Variant &gt;gi|1189450351|pdb|5MMS|C Chain C, Human Cystathionine Beta-synthase (cbs) P.p49l Delta409-551 Variant &gt;gi|1189450352|pdb|5MMS|D Chain D, Human Cystathionine Beta-synthase (cbs) P.p49l Delta409-551 Variant &gt;gi|1189450353|pdb|5MMS|E Chain E, Human Cystathionine Beta-synthase (cbs) P.p49l Delta409-551 Variant &gt;gi|1189450354|pdb|5MMS|F Chain F, Human Cystathionine Beta-synthase (cbs) P.p49l Delta409-551 Variant</Hit_def>
+  <Hit_accession>5MMS_A</Hit_accession>
+  <Hit_len>408</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>201.445</Hsp_bit-score>
+      <Hsp_score>511</Hsp_score>
+      <Hsp_evalue>3.34308e-61</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>311</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>386</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>132</Hsp_identity>
+      <Hsp_positive>184</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>323</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGN-----GRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLT---------EGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTAL</Hsp_qseq>
+      <Hsp_hseq>KILPDILKKIGDTPMVRINKIGKKFGLKCELLAKCEFFNAGGSVKDRISLRMIEDAERDGTLKPGDTIIEPTSGNTGIGLALAAAVRGYRCIIVMPEKMSSEKVDVLRALGAEIVRTPTNARFDSPESHVGV--AWRLKNEIPNSH-----ILDQYRNASNPLAHYDTTADEILQQCDGKLDMLVASVGTGGTITGIARKLKEKCPGCRII--GVDPEGS-ILAEPEELNQTEQTTYEVEGIGYDFIPTVLDRTVVDKWFKSNDEEAFTFARMLIAQEGLLCGGSAGSTVAVAVKAAQ-ELQEGQRCVVILPDSVRNYMTKFL</Hsp_hseq>
+      <Hsp_midline>KI  D    IG TP+VR+N+IG        +LAK E  N   SVK RI   MI DAE+ G LKPG  ++EPTSGNTGI LA  AA RGY+  + MPE MS E+  +L+ALGA +V T         E   G+  A +   EI  S+     +L Q+ N +NP  H  TT  EI +  DG++D+ +A VGTGGT+TG++R +K       +I   V+P  S ++A+     + +   ++++GIG  FIP  LD  +VDK     +EEA + AR L+ +EG+L G S+G+ VA A+K  + E    +  VVILP S   Y++  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gi|15825696|pdb|1JBQ|A</Hit_id>
+  <Hit_def>Chain A, Structure Of Human Cystathionine Beta-Synthase: A Unique Pyridoxal 5&apos;- Phosphate Dependent Hemeprotein &gt;gi|15825697|pdb|1JBQ|B Chain B, Structure Of Human Cystathionine Beta-Synthase: A Unique Pyridoxal 5&apos;- Phosphate Dependent Hemeprotein &gt;gi|15825698|pdb|1JBQ|C Chain C, Structure Of Human Cystathionine Beta-Synthase: A Unique Pyridoxal 5&apos;- Phosphate Dependent Hemeprotein &gt;gi|15825699|pdb|1JBQ|D Chain D, Structure Of Human Cystathionine Beta-Synthase: A Unique Pyridoxal 5&apos;- Phosphate Dependent Hemeprotein &gt;gi|15825700|pdb|1JBQ|E Chain E, Structure Of Human Cystathionine Beta-Synthase: A Unique Pyridoxal 5&apos;- Phosphate Dependent Hemeprotein &gt;gi|15825701|pdb|1JBQ|F Chain F, Structure Of Human Cystathionine Beta-Synthase: A Unique Pyridoxal 5&apos;- Phosphate Dependent Hemeprotein</Hit_def>
+  <Hit_accession>1JBQ_A</Hit_accession>
+  <Hit_len>435</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>201.06</Hsp_bit-score>
+      <Hsp_score>510</Hsp_score>
+      <Hsp_evalue>9.28791e-61</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>316</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>412</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>186</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>328</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGN-----GRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLT---------EGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTALFADLF</Hsp_qseq>
+      <Hsp_hseq>KILPDILKKIGDTPMVRINKIGKKFGLKCELLAKCEFFNAGGSVKDRISLRMIEDAERDGTLKPGDTIIEPTSGNTGIGLALAAAVRGYRCIIVMPEKMSSEKVDVLRALGAEIVRTPTNARFDSPESHVGV--AWRLKNEIPNSH-----ILDQYRNASNPLAHYDTTADEILQQCDGKLDMLVASVGTGGTITGIARKLKEKCPGCRII--GVDPEGS-ILAEPEELNQTEQTTYEVEGIGYDFIPTVLDRTVVDKWFKSNDEEAFTFARMLIAQEGLLCGGSAGSTVAVAVKAAQ-ELQEGQRCVVILPDSVRNYM-TKFLSDRW</Hsp_hseq>
+      <Hsp_midline>KI  D    IG TP+VR+N+IG        +LAK E  N   SVK RI   MI DAE+ G LKPG  ++EPTSGNTGI LA  AA RGY+  + MPE MS E+  +L+ALGA +V T         E   G+  A +   EI  S+     +L Q+ N +NP  H  TT  EI +  DG++D+ +A VGTGGT+TG++R +K       +I   V+P  S ++A+     + +   ++++GIG  FIP  LD  +VDK     +EEA + AR L+ +EG+L G S+G+ VA A+K  + E    +  VVILP S   Y+ T   +D +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gi|544192102|pdb|4L0D|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of Delta516-525 Human Cystathionine Beta-synthase Containing C-terminal 6xhis-tag &gt;gi|544192103|pdb|4L0D|B Chain B, Crystal Structure Of Delta516-525 Human Cystathionine Beta-synthase Containing C-terminal 6xhis-tag</Hit_def>
+  <Hit_accession>4L0D_A</Hit_accession>
+  <Hit_len>549</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>202.216</Hsp_bit-score>
+      <Hsp_score>513</Hsp_score>
+      <Hsp_evalue>3.5282e-60</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>311</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>386</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>132</Hsp_identity>
+      <Hsp_positive>184</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>323</Hsp_align-len>
+      <Hsp_qseq>KIFEDNSLTIGHTPLVRLNRIGN-----GRILAKVESRNPSFSVKCRIGANMIWDAEKRGVLKPGVELVEPTSGNTGIALAYVAAARGYKLTLTMPETMSIERRKLLKALGANLVLT---------EGAKGMKGAIQKAEEIVASNPEKYLLLQQFSNPANPEIHEKTTGPEIWEDTDGQVDVFIAGVGTGGTLTGVSRYIKGTKGKTDLISVAVEPTDSPVIAQALAGEEIKPGPHKIQGIGAGFIPANLDLKLVDKVIGITNEEAISTARRLMEEEGILAGISSGAAVAAALKLQEDESFTNKNIVVILPSSGERYLSTAL</Hsp_qseq>
+      <Hsp_hseq>KILPDILKKIGDTPMVRINKIGKKFGLKCELLAKCEFFNAGGSVKDRISLRMIEDAERDGTLKPGDTIIEPTSGNTGIGLALAAAVRGYRCIIVMPEKMSSEKVDVLRALGAEIVRTPTNARFDSPESHVGV--AWRLKNEIPNSH-----ILDQYRNASNPLAHYDTTADEILQQCDGKLDMLVASVGTGGTITGIARKLKEKCPGCRII--GVDPEGS-ILAEPEELNQTEQTTYEVEGIGYDFIPTVLDRTVVDKWFKSNDEEAFTFARMLIAQEGLLCGGSAGSTVAVAVKAAQ-ELQEGQRCVVILPDSVRNYMTKFL</Hsp_hseq>
+      <Hsp_midline>KI  D    IG TP+VR+N+IG        +LAK E  N   SVK RI   MI DAE+ G LKPG  ++EPTSGNTGI LA  AA RGY+  + MPE MS E+  +L+ALGA +V T         E   G+  A +   EI  S+     +L Q+ N +NP  H  TT  EI +  DG++D+ +A VGTGGT+TG++R +K       +I   V+P  S ++A+     + +   ++++GIG  FIP  LD  +VDK     +EEA + AR L+ +EG+L G S+G+ VA A+K  + E    +  VVILP S   Y++  L</Hsp_midline>
     </Hsp>
   </Hit_hsps>
 </Hit>

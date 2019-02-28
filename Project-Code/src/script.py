@@ -121,6 +121,8 @@ def build_target_distance_pdfs(length, alignment_list):
             if ij_distance_list:
                 target_distance_pdfs[i][j][0] = np.mean(ij_distance_list)
                 target_distance_pdfs[i][j][1] = np.std(ij_distance_list)
+                if len(ij_distance_list) > 0:
+                    target_distance_pdfs[i][j][1] = 8.0
             else:
                 target_distance_pdfs[i][j][0] = np.nan
                 target_distance_pdfs[i][j][1] = np.nan
@@ -153,7 +155,18 @@ def main():
             library.output_distance_matrix(DATA_DIR, distance_matrix[:,:,0])
 
             residue_matrix = gradient_descent.initialize_residue_matrix(len(record.seq))
-            print(gradient_descent.d_normal_d_r(distance_matrix, residue_matrix, 0))
+            new_residue_matrix = residue_matrix.copy()
+            iterations = 20000
+            length = len(record.seq)
+            for i in tqdm(range(iterations)):
+                # update residue matrix for residues up to given depth
+                new_residue_matrix = gradient_descent.update_r(0.0001, distance_matrix, new_residue_matrix,
+                                                               min(length, int((i / iterations) * length + 5)))
+                if i % 1000 == 0:
+                    library.write_pdb(new_residue_matrix, record.seq, "structure-{}".format(i))
+
+            library.write_pdb(new_residue_matrix, record.seq, "final_structure")
+
 
         else:
             continue

@@ -103,7 +103,7 @@ class Alignment:
             if self.hit_range[0] < r1 < self.hit_range[1]:
                 for residue2 in chain.get_residues():
                     r2 = residue2.id[1]
-                    if self.hit_range[0] < r2 < self.hit_range[1]:
+                    if self.hit_range[0] < r2 < self.hit_range[1] and 'CA' in residue1 and 'CA' in residue2:
                         distance = residue1['CA'] - residue2['CA']
                         hit_distance_matrix[r1 - self.hit_range[0]][r2 - self.hit_range[0]] = distance
 

@@ -107,3 +107,4 @@ venv.bak/
 # OUR STUFF
 data/template_pdbs
 data/template_fastas
+data/msa
