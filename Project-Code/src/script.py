@@ -8,7 +8,7 @@ import numpy as np
 
 DIRECTORY = dirname(dirname(abspath(__file__)))
 sys.path.append(DIRECTORY)
-from lib import library
+from lib import library, gradient_descent
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 from Bio import SeqIO
@@ -23,8 +23,6 @@ TEMPLATE_FASTA_DIR = "../data/template_fasta"
 
 
 def parse_result(msa_xml_file, file_no):
-    print("\n" + '*' * 50)
-    print("Parsing Alignment XML\n\n")
 
     result = open(msa_xml_file, "r")
     output = OUTPUT_DIR + "msa" + str(file_no) + ".fasta"
@@ -42,8 +40,6 @@ def parse_result(msa_xml_file, file_no):
 
 
 def gen_alignment_list(msa_xml_file):
-    print("\n" + '*' * 50)
-    print("Generating Alignment List\n\n")
 
     result = open(msa_xml_file, "r")
     records = NCBIXML.parse(result)
@@ -71,8 +67,6 @@ def gen_alignment_list(msa_xml_file):
 
 
 def download_pdbs_for_alignments(alignment_list):
-    print("\n" + '*' * 50)
-    print("Downloading PDBs for Alignments\n")
     if not os.path.exists(TEMPLATE_PDB_DIR):
         os.mkdir(TEMPLATE_PDB_DIR)
     if not os.path.exists(TEMPLATE_FASTA_DIR):
@@ -110,8 +104,6 @@ def download_pdbs_for_alignments(alignment_list):
 
 
 def build_target_distance_pdfs(length, alignment_list):
-    print('*' * 50)
-    print("Building Target Distance PDF Matrix\n\n")
 
     # this LxLx2 array will contain mean and SD for each pair of residues
     target_distance_pdfs = np.ndarray((length, length, 2))
@@ -133,7 +125,10 @@ def build_target_distance_pdfs(length, alignment_list):
                 target_distance_pdfs[i][j][0] = np.nan
                 target_distance_pdfs[i][j][1] = np.nan
             # print if you want to see it
-            # print(i, j, target_distance_pdfs[i][j])
+            if np.isclose(np.abs(i - j), 1):
+                target_distance_pdfs[i][j][0] = 3.8
+                target_distance_pdfs[i][j][1] = 1e-5
+
 
     return target_distance_pdfs
 
@@ -147,16 +142,19 @@ def main():
             target_file = TARGET_DIR + filename
             msa_file = OUTPUT_DIR + "msa.xml"
             record = SeqIO.read(target_file, format="fasta")
-            result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
-            library.create_dir(OUTPUT_DIR)
-            library.write_stream(msa_file, result_handle)
+            # result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
+            # library.create_dir(OUTPUT_DIR)
+            # library.write_stream(msa_file, result_handle)
 
             alignment_list = gen_alignment_list(msa_file)
             download_pdbs_for_alignments(alignment_list)
-            target_distance_pdfs = build_target_distance_pdfs(len(record.seq), alignment_list)
+            distance_matrix = build_target_distance_pdfs(len(record.seq), alignment_list)
 
-            print(target_distance_pdfs[:,:,0].shape)
-            library.output_distance_matrix(DATA_DIR, target_distance_pdfs[:,:,0])
+            library.output_distance_matrix(DATA_DIR, distance_matrix[:,:,0])
+
+            residue_matrix = gradient_descent.initialize_residue_matrix(len(record.seq))
+            print(gradient_descent.d_normal_d_r(distance_matrix, residue_matrix, 0))
+
         else:
             continue
 
