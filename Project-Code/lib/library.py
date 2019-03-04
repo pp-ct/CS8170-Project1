@@ -115,9 +115,9 @@ def output_distance_matrix(save_folder, distance_matrix, prefix=None):
     plt.close()
 
 
-def write_pdb(residue_matrix, seq, name):
+def write_pdb(path, residue_matrix, seq, name):
     "ATOM      2  CA  MET A   1      -2.112  80.521  14.723  1.00 27.66           C  "
-    with open("{}.pdb".format(name), 'w+') as pdb_file:
+    with open(os.path.join(path, "{}.pdb".format(name)), 'w+') as pdb_file:
         for i, residue in enumerate(residue_matrix):
             # pdb_file.write(
             #     "ATOM\t{}\tCA\t{}\tA\t{}\t{}\t{}\t{}\t1\t1\tC\n".format(

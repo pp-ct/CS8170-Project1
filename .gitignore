@@ -108,3 +108,5 @@ venv.bak/
 data/template_pdbs
 data/template_fastas
 data/msa
+data/template_distance
+*.pdb

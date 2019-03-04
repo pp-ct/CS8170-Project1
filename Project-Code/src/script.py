@@ -20,6 +20,7 @@ TARGET_DIR = "../data/target/"  # place target fasta files here i.e. one fasta f
 OUTPUT_DIR = "../data/msa/"
 TEMPLATE_PDB_DIR = "../data/template_pdbs"
 TEMPLATE_FASTA_DIR = "../data/template_fasta"
+TEMPLATE_DISTANCE_DIR = "../data/template_distance"
 
 
 def parse_result(msa_xml_file, file_no):
@@ -103,18 +104,23 @@ def download_pdbs_for_alignments(alignment_list):
         alignment.pdb_path = os.path.join(TEMPLATE_PDB_DIR, hit_chain_id + ".reindex.pdb")
 
 
-def build_target_distance_pdfs(length, alignment_list):
+def build_target_distance_pdfs(length, alignment_list, type='CA'):
+    if not os.path.exists(TEMPLATE_DISTANCE_DIR):
+        os.mkdir(TEMPLATE_DISTANCE_DIR)
+    for alignment in tqdm(alignment_list, desc="Loading distance matrices."):
+        alignment.build_hit_matrices(TEMPLATE_DISTANCE_DIR)
+
 
     # this LxLx2 array will contain mean and SD for each pair of residues
     target_distance_pdfs = np.ndarray((length, length, 2))
 
     # this is the LxL matrix of lists (sort of)
     # each list contains all of the distances for the aligned pair
-    for i in range(length):
+    for i in tqdm(range(length), desc="Building distance PDFs"):
         for j in range(length):
             ij_distance_list = []
             for alignment in alignment_list:
-                alignment_ij_distance = alignment.get_distance_for_query_residues(i, j)
+                alignment_ij_distance = alignment.get_distance_for_query_residues(i, j, type=type)
                 if alignment_ij_distance:
                     ij_distance_list.append(alignment_ij_distance)
 
@@ -150,22 +156,35 @@ def main():
 
             alignment_list = gen_alignment_list(msa_file)
             download_pdbs_for_alignments(alignment_list)
-            distance_matrix = build_target_distance_pdfs(len(record.seq), alignment_list)
+            ca_distance_matrix = build_target_distance_pdfs(len(record.seq), alignment_list, type='CA')
+            # no_distance_matrix = build_target_distance_pdfs(len(record.seq), alignment_list, type='NO')
+            distance_matrices = [ca_distance_matrix]#, no_distance_matrix]
 
-            library.output_distance_matrix(DATA_DIR, distance_matrix[:,:,0])
+            library.output_distance_matrix(DATA_DIR, distance_matrices[0][:,:,0], prefix='CA')
+            # library.output_distance_matrix(DATA_DIR, distance_matrices[1][:, :, 0], prefix='NO')
 
             residue_matrix = gradient_descent.initialize_residue_matrix(len(record.seq))
             new_residue_matrix = residue_matrix.copy()
-            iterations = 20000
+            r_update_previous = np.zeros(new_residue_matrix.shape)
+
+            iterations = 10000
+            output_interval = 100
+            a = 0.01
+            b = 0.00
             length = len(record.seq)
             for i in tqdm(range(iterations)):
                 # update residue matrix for residues up to given depth
-                new_residue_matrix = gradient_descent.update_r(0.0001, distance_matrix, new_residue_matrix,
-                                                               min(length, int((i / iterations) * length + 5)))
-                if i % 1000 == 0:
-                    library.write_pdb(new_residue_matrix, record.seq, "structure-{}".format(i))
+                folding_depth = min(length - 1, int((2 * i / iterations) * length))
+                # folding_depth = length - 1
+                new_residue_matrix, r_update_previous = gradient_descent.update_r(a, b, distance_matrices, new_residue_matrix,
+                                                                                  r_update_previous,
+                                                                                  folding_depth)
+                new_residue_matrix = gradient_descent.resolve_clashes(new_residue_matrix, folding_depth)
 
-            library.write_pdb(new_residue_matrix, record.seq, "final_structure")
+                if i % output_interval == 0:
+                    library.write_pdb(DATA_DIR, new_residue_matrix, record.seq, "structure-{}".format(i))
+
+            library.write_pdb(DATA_DIR, new_residue_matrix, record.seq, "final_structure")
 
 
         else:

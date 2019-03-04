@@ -1,5 +1,7 @@
 import numpy as np
 from Bio import PDB
+import os
+import pickle
 
 aa_dict = {
     'A':'ALA',
@@ -65,7 +67,8 @@ class Alignment:
         self.query_hit_dict, self.hit_query_dict = self.generate_query_hit_dict()
         self.pdb_path = ""
 
-        self.hit_distance_matrix = None
+        self.ca_hit_distance_matrix = None
+        self.no_hit_distance_matrix = None
 
     def generate_query_hit_dict(self):
         query_hit_dict = {}
@@ -91,8 +94,14 @@ class Alignment:
 
         return query_hit_dict, hit_query_dict
 
-    def generate_hit_distance_matrix(self):
+    def generate_hit_distance_matrix(self, type='CA'):
         hit_distance_matrix = np.zeros((self.hit_span, self.hit_span))
+
+        r1_type = 'CA'
+        r2_type = 'CA'
+        if type == 'NO':
+            r1_type = 'N'
+            r2_type = 'O'
 
         parser = PDB.PDBParser()
         chains = parser.get_structure(id='temp', file=self.pdb_path)[0]
@@ -103,19 +112,49 @@ class Alignment:
             if self.hit_range[0] < r1 < self.hit_range[1]:
                 for residue2 in chain.get_residues():
                     r2 = residue2.id[1]
-                    if self.hit_range[0] < r2 < self.hit_range[1] and 'CA' in residue1 and 'CA' in residue2:
-                        distance = residue1['CA'] - residue2['CA']
+                    if self.hit_range[0] < r2 < self.hit_range[1] and r1_type in residue1 and r2_type in residue2:
+                        distance = residue1[r1_type] - residue2[r2_type]
                         hit_distance_matrix[r1 - self.hit_range[0]][r2 - self.hit_range[0]] = distance
 
         return hit_distance_matrix
 
-    def get_distance_for_query_residues(self,  r1, r2):
-        if self.hit_distance_matrix is None:
-            self.hit_distance_matrix = self.generate_hit_distance_matrix()
+
+    def build_hit_matrices(self, distance_matrix_dir):
+        if self.ca_hit_distance_matrix is None:
+            pickle_file = os.path.join(distance_matrix_dir, "{}_{}-CA.pickle".format(self.hit_id, self.chain_id))
+            if os.path.exists(pickle_file):
+                with open(pickle_file, 'rb') as distance_matrix_file:
+                    self.ca_hit_distance_matrix = pickle.load(distance_matrix_file)
+            else:
+                self.ca_hit_distance_matrix = self.generate_hit_distance_matrix(type='CA')
+                os.system("touch {}".format(pickle_file))
+                with open(pickle_file, 'wb') as distance_matrix_file:
+                    pickle.dump(self.ca_hit_distance_matrix, distance_matrix_file)
+        if self.no_hit_distance_matrix is None:
+            pickle_file = os.path.join(distance_matrix_dir, "{}_{}-NO.pickle".format(self.hit_id, self.chain_id))
+            if os.path.exists(pickle_file):
+                with open(pickle_file, 'rb') as distance_matrix_file:
+                    self.no_hit_distance_matrix = pickle.load(distance_matrix_file)
+            else:
+                self.no_hit_distance_matrix = self.generate_hit_distance_matrix(type='NO')
+                os.system("touch {}".format(pickle_file))
+                with open(pickle_file, 'wb') as distance_matrix_file:
+                    pickle.dump(self.no_hit_distance_matrix, distance_matrix_file)
+
+
+    def get_distance_for_query_residues(self,  r1, r2, type='CA'):
+        if self.ca_hit_distance_matrix is None:
+            self.ca_hit_distance_matrix = self.generate_hit_distance_matrix(type='CA')
+        if self.no_hit_distance_matrix is None:
+            self.no_hit_distance_matrix = self.generate_hit_distance_matrix(type='NO')
+
+        hit_distance_matrix = self.ca_hit_distance_matrix
+        if type == 'NO':
+            hit_distance_matrix = self.no_hit_distance_matrix
 
         if r1 in self.query_hit_dict and r2 in self.query_hit_dict:
             indexed_r1 = self.query_hit_dict[r1] - self.hit_range[0]
             indexed_r2 = self.query_hit_dict[r2] - self.hit_range[0]
-            return self.hit_distance_matrix[indexed_r1][indexed_r2]
+            return hit_distance_matrix[indexed_r1][indexed_r2]
         else:
             return False
