@@ -36,14 +36,6 @@ def d_normal_d_r(distance_matrix, residue_matrix, r_index):
             d_normal_val = d_normal(d_ij, mu_ij, sd_ij)
             d_distance_val = d_distance(r1, r2)
 
-            # residue_separation = abs(i - r_index)
-            # separation_scalar = 1
-            # if residue_separation < 6:
-            #     separation_scalar = 8
-            # if residue_separation < 12:
-            #     separation_scalar = 4
-            # if residue_separation < 22:
-            #     separation_scalar = 2
             d_normal_d_r -= d_normal_val * d_distance_val + 0.0001
 
     return d_normal_d_r

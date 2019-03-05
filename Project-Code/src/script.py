@@ -17,16 +17,17 @@ from tqdm import tqdm
 
 DATA_DIR = "../data"
 TARGET_DIR = "../data/target/"  # place target fasta files here i.e. one fasta file per target protein
-OUTPUT_DIR = "../data/msa/"
+MSA_DIR = "../data/msa/"
 TEMPLATE_PDB_DIR = "../data/template_pdbs"
 TEMPLATE_FASTA_DIR = "../data/template_fasta"
 TEMPLATE_DISTANCE_DIR = "../data/template_distance"
+OUTPUT_DIR = "../data/output"
 
 
 def parse_result(msa_xml_file, file_no):
 
     result = open(msa_xml_file, "r")
-    output = OUTPUT_DIR + "msa" + str(file_no) + ".fasta"
+    output = MSA_DIR + "msa" + str(file_no) + ".fasta"
     records = NCBIXML.parse(result)
     item = next(records)
     for alignment in item.alignments:
@@ -127,12 +128,11 @@ def build_target_distance_pdfs(length, alignment_list, type='CA'):
             if ij_distance_list:
                 target_distance_pdfs[i][j][0] = np.mean(ij_distance_list)
                 target_distance_pdfs[i][j][1] = np.std(ij_distance_list)
-                if len(ij_distance_list) > 0:
+                if len(ij_distance_list) == 1:
                     target_distance_pdfs[i][j][1] = 8.0
             else:
                 target_distance_pdfs[i][j][0] = np.nan
                 target_distance_pdfs[i][j][1] = np.nan
-            # print if you want to see it
             if np.isclose(np.abs(i - j), 1):
                 target_distance_pdfs[i][j][0] = 3.8
                 target_distance_pdfs[i][j][1] = 1e-5
@@ -148,11 +148,17 @@ def main():
         if filename.endswith(".fasta"):
             file_no += 1
             target_file = TARGET_DIR + filename
-            msa_file = OUTPUT_DIR + "msa.xml"
             record = SeqIO.read(target_file, format="fasta")
-            # result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
-            # library.create_dir(OUTPUT_DIR)
-            # library.write_stream(msa_file, result_handle)
+
+            print('-' * 30)
+            print("Folding {}".format(record.name))
+            print('-' * 30)
+
+            msa_file = os.path.join(MSA_DIR, "{}.xml".format(record.name))
+            if not os.path.exists(msa_file):
+                result_handle = NCBIWWW.qblast("blastp", "pdbaa", record.seq)
+                library.create_dir(MSA_DIR)
+                library.write_stream(msa_file, result_handle)
 
             alignment_list = gen_alignment_list(msa_file)
             download_pdbs_for_alignments(alignment_list)
@@ -160,8 +166,15 @@ def main():
             # no_distance_matrix = build_target_distance_pdfs(len(record.seq), alignment_list, type='NO')
             distance_matrices = [ca_distance_matrix]#, no_distance_matrix]
 
-            library.output_distance_matrix(DATA_DIR, distance_matrices[0][:,:,0], prefix='CA')
-            # library.output_distance_matrix(DATA_DIR, distance_matrices[1][:, :, 0], prefix='NO')
+            if not os.path.exists(OUTPUT_DIR):
+                os.mkdir(OUTPUT_DIR)
+            output_dir = os.path.join(OUTPUT_DIR, record.name)
+            if not os.path.exists(output_dir):
+                os.mkdir(output_dir)
+
+
+            library.output_distance_matrix(output_dir, distance_matrices[0][:,:,0], prefix='CA')
+            # library.output_distance_matrix(output_dir, distance_matrices[1][:, :, 0], prefix='NO')
 
             residue_matrix = gradient_descent.initialize_residue_matrix(len(record.seq))
             new_residue_matrix = residue_matrix.copy()
@@ -170,9 +183,9 @@ def main():
             iterations = 10000
             output_interval = 100
             a = 0.01
-            b = 0.00
+            b = 0.0
             length = len(record.seq)
-            for i in tqdm(range(iterations)):
+            for i in tqdm(range(0, iterations + 1)):
                 # update residue matrix for residues up to given depth
                 folding_depth = min(length - 1, int((2 * i / iterations) * length))
                 # folding_depth = length - 1
@@ -182,9 +195,14 @@ def main():
                 new_residue_matrix = gradient_descent.resolve_clashes(new_residue_matrix, folding_depth)
 
                 if i % output_interval == 0:
-                    library.write_pdb(DATA_DIR, new_residue_matrix, record.seq, "structure-{}".format(i))
+                    library.write_pdb(output_dir, new_residue_matrix, record.seq, "structure-{}".format(i))
 
-            library.write_pdb(DATA_DIR, new_residue_matrix, record.seq, "final_structure")
+            # library.write_pdb(output_dir, new_residue_matrix, record.seq, "final_structure")
+            os.system("python ../lib/zhang_python_scripts/reindex_pdb.py {} {} {} -clean=True".format(
+                target_file,
+                os.path.join(OUTPUT_DIR, "structure-{}.pdb".format(iterations)),
+                os.path.join(OUTPUT_DIR, "final_structure.pdb")
+            ))
 
 
         else:
