@@ -108,3 +108,4 @@ data/msa
 data/template_distance
 data/output
 *.pdb
+.DS_Store
