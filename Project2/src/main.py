@@ -17,6 +17,8 @@ from glob import glob
 DATA_DIR = "../data/"
 TARGET_DIR = "../data/target/"
 OUTPUT_DIR = "../data/target/{}/output"
+
+
 for file in glob(TARGET_DIR + "*"):
     target_name = os.path.split(file)[1]
     output_dir = OUTPUT_DIR.format(target_name)
@@ -39,9 +41,11 @@ for file in glob(TARGET_DIR + "*"):
     new_residue_matrix = residue_matrix.copy()
     r_update_previous = np.zeros(new_residue_matrix.shape)
 
+    continue
+
     iterations = 1500#10000
     output_interval = 100
-    a = 0.1
+    a = 1
     b = 0.9
     length = len(record.seq)
 
@@ -56,7 +60,7 @@ for file in glob(TARGET_DIR + "*"):
                                                                           folding_depth)
         new_residue_matrix = gradient_descent.resolve_clashes(new_residue_matrix, folding_depth)
 
-        r_update_previous /= i + 1
+        r_update_previous /= (i + 1) / 2
         r_update_history.append(np.sum(np.abs(r_update_previous)))
 
         if i % output_interval == 0:
