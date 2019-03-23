@@ -176,6 +176,15 @@ def main():
             library.output_distance_matrix(output_dir, distance_matrices[0][:,:,0], prefix='CA')
             # library.output_distance_matrix(output_dir, distance_matrices[1][:, :, 0], prefix='NO')
 
+            os.system("python ../lib/zhang_python_scripts/reindex_pdb.py {} {} {} -clean=True".format(
+                target_file,
+                os.path.join(DATA_DIR, "native_{}.pdb".format(record.name)),
+                os.path.join(OUTPUT_DIR, "native_structure.pdb")
+            ))
+            native_distance_matrix = library.load_ca_distnaces_from_pdb(
+                os.path.join(DATA_DIR, "native_{}.pdb".format(record.name)), len(record.seq))
+            library.output_distance_matrix(output_dir, native_distance_matrix, prefix='native')
+
             residue_matrix = gradient_descent.initialize_residue_matrix(len(record.seq))
             new_residue_matrix = residue_matrix.copy()
             r_update_previous = np.zeros(new_residue_matrix.shape)
