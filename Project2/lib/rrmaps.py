@@ -1,6 +1,7 @@
 import numpy as np
 from os.path import dirname, abspath
 import sys
+import os
 DIRECTORY = dirname(dirname(abspath(__file__)))
 sys.path.append(DIRECTORY)
 
@@ -36,7 +37,8 @@ def distance_matrix(filename, target_name):
         mat[y_coord][x_coord][0] = mean[i]
         mat[y_coord][x_coord][1] = std[i]
 
-    library.output_distance_matrix(DATA_DIR, mat[:, :, 0], prefix=target_name)
+    library.output_distance_matrix(os.path.join(DATA_DIR,"target", target_name, "output"),
+                                   mat[:, :, 0], prefix=target_name)
     return mat
 
 

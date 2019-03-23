@@ -36,7 +36,9 @@ def d_normal_d_r(distance_matrix, residue_matrix, r_index):
             d_normal_val = d_normal(d_ij, mu_ij, sd_ij)
             d_distance_val = d_distance(r1, r2)
 
-            d_normal_d_r -= d_normal_val * d_distance_val + 0.0001
+            val = d_normal_val * d_distance_val
+            if not np.isclose(val[0], 0.0) and not np.isclose(val[1], 0.0) and not np.isclose(val[2], 0.0):
+                d_normal_d_r -= d_normal_val * d_distance_val
 
     return d_normal_d_r
 

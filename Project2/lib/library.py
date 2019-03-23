@@ -132,7 +132,8 @@ def write_pdb(path, residue_matrix, seq, name):
             pdb_file.write("{}{} {} {} {}{}    {}{}{}{}{}\n".format(
                 "ATOM".ljust(6),
                 str(i).rjust(5),
-                ("CA" if seq[i] == 'G' else "CB").center(4),
+                # ("CA" if seq[i] == 'G' else "CB").center(4),
+                "CA".center(4),
                 aa_dict[seq[i]].ljust(3),
                 "A".rjust(1),
                 str(i).rjust(4),
