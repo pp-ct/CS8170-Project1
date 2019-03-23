@@ -41,7 +41,7 @@ for file in glob(TARGET_DIR + "*"):
 
     iterations = 1500#10000
     output_interval = 100
-    a = 0.01
+    a = 0.1
     b = 0.9
     length = len(record.seq)
 
