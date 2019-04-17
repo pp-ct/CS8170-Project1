@@ -107,5 +107,6 @@ data/template_fastas
 data/msa
 data/template_distance
 data/output
-*.pdb
+Project1/*.pdb
+Project2/*.pdb
 .DS_Store
